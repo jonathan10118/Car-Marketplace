@@ -1,0 +1,39 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.logo-icon {
+  font-size: 1.5em;
+}
+
+.logo-text {
+  font-size: 1em;
+}
+
+.logo-sm .logo-icon {
+  font-size: 1.2em;
+}
+
+.logo-sm .logo-text {
+  font-size: 0.875em;
+}
+
+.logo-md .logo-icon {
+  font-size: 1.5em;
+}
+
+.logo-md .logo-text {
+  font-size: 1em;
+}
+
+.logo-lg .logo-icon {
+  font-size: 2em;
+}
+
+.logo-lg .logo-text {
+  font-size: 1.25em;
+}
