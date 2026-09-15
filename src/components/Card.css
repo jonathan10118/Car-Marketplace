@@ -3,6 +3,7 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   transition: all var(--transition-base);
+  overflow: hidden;
 }
 
 .card-default {
@@ -19,8 +20,9 @@
 }
 
 .card-hoverable:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
 }
 
 .card-padding-sm {

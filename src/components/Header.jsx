@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import Button from './Button';
+import ThemeToggle from './ThemeToggle';
+import LanguageSelector from './LanguageSelector';
+import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../translations';
 import './Header.css';
 
 const Header = () => {
+  const { language } = useLanguage();
+  const t = useTranslation(language);
+
   return (
     <header className="header">
       <div className="container header-content">
@@ -15,33 +22,38 @@ const Header = () => {
           <ul className="header-nav-list">
             <li className="header-nav-item">
               <Link to="/" className="header-nav-link">
-                Início
+                {t.header.home}
               </Link>
             </li>
             <li className="header-nav-item">
               <Link to="/vehicles" className="header-nav-link">
-                Veículos
+                {t.header.buy}
+              </Link>
+            </li>
+            <li className="header-nav-item">
+              <Link to="/sell" className="header-nav-link">
+                {t.header.sell}
               </Link>
             </li>
             <li className="header-nav-item">
               <Link to="/about" className="header-nav-link">
-                Sobre
-              </Link>
-            </li>
-            <li className="header-nav-item">
-              <Link to="/contact" className="header-nav-link">
-                Contato
+                {t.header.about}
               </Link>
             </li>
           </ul>
         </nav>
 
+        <div className="header-controls">
+          <ThemeToggle />
+          <LanguageSelector />
+        </div>
+
         <div className="header-actions">
           <Button variant="ghost" size="sm">
-            Entrar
+            {t.header.login}
           </Button>
           <Button variant="primary" size="sm">
-            Cadastrar
+            {t.header.register}
           </Button>
         </div>
 

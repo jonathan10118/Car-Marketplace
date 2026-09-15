@@ -1,52 +1,67 @@
 :root {
-  /* Cores principais - Marketplace Automotivo */
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-primary-light: #3b82f6;
+  /* Paleta de cores - Marketplace Automotivo Profissional */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: #3B82F6;
   
-  --color-secondary: #64748b;
+  --color-accent: #F59E0B;
+  --color-accent-dark: #D97706;
+  --color-accent-light: #FBBF24;
+  
+  --color-secondary: #64748B;
   --color-secondary-dark: #475569;
-  --color-secondary-light: #94a3b8;
+  --color-secondary-light: #94A3B8;
   
   /* Cores de feedback */
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
-  --color-info: #06b6d4;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #06B6D4;
   
-  /* Cores neutras */
-  --color-white: #ffffff;
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  /* Cores neutras - Paleta escura profissional */
+  --color-white: #FFFFFF;
+  --color-gray-50: #F8FAFC;
+  --color-gray-100: #F1F5F9;
+  --color-gray-200: #E2E8F0;
+  --color-gray-300: #CBD5E1;
+  --color-gray-400: #94A3B8;
+  --color-gray-500: #64748B;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1E293B;
+  --color-gray-900: #0F172A;
   
-  /* Backgrounds */
+  /* Cores específicas do tema escuro */
+  --bg-dark: #0B1220;
+  --bg-surface: #111827;
+  --bg-card: #182234;
+  --text-primary-dark: #F8FAFC;
+  --text-secondary-dark: #94A3B8;
+  --border-dark: #334155;
+  
+  /* Backgrounds - Tema Claro (padrão) */
   --bg-primary: var(--color-white);
   --bg-secondary: var(--color-gray-50);
   --bg-tertiary: var(--color-gray-100);
   
-  /* Text */
+  /* Text - Tema Claro (padrão) */
   --text-primary: var(--color-gray-900);
   --text-secondary: var(--color-gray-600);
   --text-tertiary: var(--color-gray-500);
   --text-inverse: var(--color-white);
+  --text-muted: var(--color-gray-400);
   
-  /* Borders */
+  /* Borders - Tema Claro (padrão) */
   --border-color: var(--color-gray-200);
   --border-color-dark: var(--color-gray-300);
+  --border-color-light: var(--color-gray-100);
   
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -56,6 +71,7 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
   
   /* Border radius */
   --radius-sm: 0.25rem;
@@ -63,11 +79,12 @@
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
   --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
   --radius-full: 9999px;
   
   /* Typography */
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Fira Code', ui-monospace, monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, 'Consolas', monospace;
   
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -77,6 +94,7 @@
   --text-2xl: 1.5rem;
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
   
   --leading-tight: 1.25;
   --leading-normal: 1.5;
@@ -98,22 +116,41 @@
   
   /* Container */
   --container-max-width: 1280px;
-  --header-height: 64px;
+  --header-height: 72px;
   --footer-height: auto;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-surface) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--bg-dark) 0%, #1a2332 100%);
 }
 
-/* Dark mode */
+/* Tema Escuro Manual */
+.dark {
+  --bg-primary: var(--bg-dark);
+  --bg-secondary: var(--bg-surface);
+  --bg-tertiary: var(--bg-card);
+  
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --text-tertiary: var(--text-muted);
+  
+  --border-color: var(--border-dark);
+  --border-color-dark: var(--color-gray-600);
+}
+
+/* Dark mode automático (prefers-color-scheme) */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-primary: var(--color-gray-900);
-    --bg-secondary: var(--color-gray-800);
-    --bg-tertiary: var(--color-gray-700);
+  :root:not(.light) {
+    --bg-primary: var(--bg-dark);
+    --bg-secondary: var(--bg-surface);
+    --bg-tertiary: var(--bg-card);
     
-    --text-primary: var(--color-gray-100);
-    --text-secondary: var(--color-gray-300);
-    --text-tertiary: var(--color-gray-400);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --text-tertiary: var(--text-muted);
     
-    --border-color: var(--color-gray-700);
+    --border-color: var(--border-dark);
     --border-color-dark: var(--color-gray-600);
   }
 }
