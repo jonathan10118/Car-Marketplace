@@ -1,38 +1,27 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useEffect } from 'react';
 
-const ThemeContext = createContext();
+const ThemeContext = createContext({
+  theme: 'dark',
+  toggleTheme: () => {} // Desabilitado conforme especificação de tema escuro exclusivo
+});
 
 export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
-  }
-  return context;
+  return useContext(ThemeContext);
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme || 'light';
-  });
-
   useEffect(() => {
-    localStorage.setItem('theme', theme);
-    
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'dark' : 'light');
-  };
+    // Forçar tema escuro permanente
+    localStorage.setItem('theme', 'dark');
+    document.documentElement.classList.add('dark');
+    document.body.classList.add('dark');
+  }, []);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme: 'dark', toggleTheme: () => {} }}>
       {children}
     </ThemeContext.Provider>
   );
 };
+
+export default ThemeContext;

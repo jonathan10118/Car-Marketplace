@@ -8,5 +8,4 @@ export { default as Footer } from './Footer.jsx';
 export { default as HeroSection } from './HeroSection.jsx';
 export { default as VehicleCard } from './VehicleCard.jsx';
 export { default as SearchBar } from './SearchBar.jsx';
-export { default as ThemeToggle } from './ThemeToggle.jsx';
-export { default as LanguageSelector } from './LanguageSelector.jsx';
+export { default as FilterPanel } from './FilterPanel.jsx';

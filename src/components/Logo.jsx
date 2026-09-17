@@ -1,6 +1,6 @@
 import './Logo.css';
 
-const Logo = ({ size = 'md' }) => {
+const Logo = ({ size = 'md', text = 'NEXUS AUTO' }) => {
   const sizeClasses = {
     sm: 'logo-sm',
     md: 'logo-md',
@@ -18,7 +18,7 @@ const Logo = ({ size = 'md' }) => {
           <circle cx="17" cy="17" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
-      <span className="logo-text">NEXUS MOTORS</span>
+      <span className="logo-text">{text}</span>
     </div>
   );
 };

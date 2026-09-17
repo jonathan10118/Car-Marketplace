@@ -1,32 +1,24 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useEffect } from 'react';
 
-const LanguageContext = createContext();
+const LanguageContext = createContext({
+  language: 'pt',
+  changeLanguage: () => {}
+});
 
 export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
+  return useContext(LanguageContext);
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(() => {
-    const savedLanguage = localStorage.getItem('language');
-    return savedLanguage || 'pt';
-  });
-
   useEffect(() => {
-    localStorage.setItem('language', language);
-  }, [language]);
-
-  const changeLanguage = (lang) => {
-    setLanguage(lang);
-  };
+    localStorage.setItem('language', 'pt');
+  }, []);
 
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage }}>
+    <LanguageContext.Provider value={{ language: 'pt', changeLanguage: () => {} }}>
       {children}
     </LanguageContext.Provider>
   );
 };
+
+export default LanguageContext;

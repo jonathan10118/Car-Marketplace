@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import './Input.css';
 
 const Input = ({
@@ -13,7 +14,8 @@ const Input = ({
   id,
   ...props
 }) => {
-  const inputId = id || name || `input-${Math.random().toString(36).substr(2, 9)}`;
+  const generatedId = useId();
+  const inputId = id || name || generatedId;
 
   const inputClasses = [
     'input',

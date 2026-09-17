@@ -1,155 +1,97 @@
-// Dados mockados de lojas para demonstração
-// Cada loja representa uma concessionária ou loja parceira da Nexus Motors
-
+// Lojas oficiais Nexus Auto nas 9 cidades do Sul do Brasil
 export const stores = [
   {
     id: 1,
-    name: 'BMW Premium Curitiba',
-    type: 'premium',
+    name: 'Nexus Auto',
     city: 'Curitiba',
     state: 'PR',
-    phone: '(41) 9999-9999',
-    email: 'curitiba@bmwpremium.com',
-    instagram: '@bmwpremiumcuritiba'
+    address: 'Av. Marechal Floriano Peixoto, 4500 - Hauer',
+    phone: '(41) 99999-9999',
+    email: 'curitiba@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 2,
-    name: 'Honda Premium Rio',
-    type: 'premium',
-    city: 'Rio de Janeiro',
-    state: 'RJ',
-    phone: '(21) 8888-8888',
-    email: 'rio@hondapremium.com',
-    instagram: '@hondapremiumrio'
+    name: 'Nexus Auto',
+    city: 'Londrina',
+    state: 'PR',
+    address: 'Av. Tiradentes, 1200 - Shangri-lá',
+    phone: '(43) 99999-9999',
+    email: 'londrina@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 3,
-    name: 'Jeep Store Minas',
-    type: 'dealership',
-    city: 'Belo Horizonte',
-    state: 'MG',
-    phone: '(31) 7777-7777',
-    email: 'bh@jeepstore.com',
-    instagram: '@jeepstoreminas'
+    name: 'Nexus Auto',
+    city: 'Ponta Grossa',
+    state: 'PR',
+    address: 'Av. Ernesto Vilela, 850 - Nova Rússia',
+    phone: '(42) 99999-9999',
+    email: 'pontagrossa@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 4,
-    name: 'Auto Center Curitiba',
-    type: 'standard',
-    city: 'Curitiba',
-    state: 'PR',
-    phone: '(41) 6666-6666',
-    email: 'contato@autocentercuritiba.com',
-    instagram: '@autocentercuritiba'
+    name: 'Nexus Auto',
+    city: 'Florianópolis',
+    state: 'SC',
+    address: 'Rod. SC-401, 3500 - Saco Grande',
+    phone: '(48) 99999-9999',
+    email: 'florianopolis@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 5,
-    name: 'BMW Premium São Paulo',
-    type: 'premium',
-    city: 'São Paulo',
-    state: 'SP',
-    phone: '(11) 5555-5555',
-    email: 'sp@bmwpremium.com',
-    instagram: '@bmwpremiumsp'
+    name: 'Nexus Auto',
+    city: 'Joinville',
+    state: 'SC',
+    address: 'Rua Ottokar Doerffel, 600 - Atiradores',
+    phone: '(47) 99999-9999',
+    email: 'joinville@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 6,
-    name: 'Mercedes-Benz Rio',
-    type: 'dealership',
-    city: 'Rio de Janeiro',
-    state: 'RJ',
-    phone: '(21) 4444-4444',
-    email: 'rio@mercedes-benz.com',
-    instagram: '@mercedesbenzrio'
+    name: 'Nexus Auto',
+    city: 'Blumenau',
+    state: 'SC',
+    address: 'Rua São Paulo, 1450 - Victor Konder',
+    phone: '(47) 99999-9999',
+    email: 'blumenau@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 7,
-    name: 'Audi Premium Brasília',
-    type: 'premium',
-    city: 'Brasília',
-    state: 'DF',
-    phone: '(61) 3333-3333',
-    email: 'bsb@audipremium.com',
-    instagram: '@audipremiumbsb'
+    name: 'Nexus Auto',
+    city: 'Porto Alegre',
+    state: 'RS',
+    address: 'Av. Ceará, 700 - São João',
+    phone: '(51) 99999-9999',
+    email: 'portoalegre@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 8,
-    name: 'Hyundai Center Porto Alegre',
-    type: 'dealership',
-    city: 'Porto Alegre',
+    name: 'Nexus Auto',
+    city: 'Caxias do Sul',
     state: 'RS',
-    phone: '(51) 2222-2222',
-    email: 'poa@hyundaicenter.com',
-    instagram: '@hyundaicenterpoa'
+    address: 'Rua Sinimbu, 2100 - Centro',
+    phone: '(54) 99999-9999',
+    email: 'caxias@nexusauto.com',
+    instagram: '@nexus.auto'
   },
   {
     id: 9,
-    name: 'Auto Center Minas',
-    type: 'standard',
-    city: 'Belo Horizonte',
-    state: 'MG',
-    phone: '(31) 1111-1111',
-    email: 'contato@autocenterminas.com',
-    instagram: '@autocenterminas'
-  },
-  {
-    id: 10,
-    name: 'Chevrolet Store SP',
-    type: 'dealership',
-    city: 'São Paulo',
-    state: 'SP',
-    phone: '(11) 0000-0000',
-    email: 'sp@chevroletstore.com',
-    instagram: '@chevroletstoresp'
-  },
-  {
-    id: 11,
-    name: 'Porsche Center São Paulo',
-    type: 'premium',
-    city: 'São Paulo',
-    state: 'SP',
-    phone: '(11) 9999-8888',
-    email: 'sp@porsche.com',
-    instagram: '@porschecentersp'
-  },
-  {
-    id: 12,
-    name: 'Toyota Center São Paulo',
-    type: 'dealership',
-    city: 'São Paulo',
-    state: 'SP',
-    phone: '(11) 8888-7777',
-    email: 'sp@toyotacenter.com',
-    instagram: '@toyotacentersp'
-  },
-  {
-    id: 13,
-    name: 'Moto Center SP',
-    type: 'standard',
-    city: 'São Paulo',
-    state: 'SP',
-    phone: '(11) 7777-6666',
-    email: 'sp@motocenter.com',
-    instagram: '@motocentersp'
-  },
-  {
-    id: 14,
-    name: 'Yamaha Premium Rio',
-    type: 'premium',
-    city: 'Rio de Janeiro',
-    state: 'RJ',
-    phone: '(21) 6666-5555',
-    email: 'rio@yamahapremium.com',
-    instagram: '@yamahapremiumrio'
-  },
-  {
-    id: 15,
-    name: 'Kawasaki Store Curitiba',
-    type: 'dealership',
-    city: 'Curitiba',
-    state: 'PR',
-    phone: '(41) 5555-4444',
-    email: 'curitiba@kawasakistore.com',
-    instagram: '@kawasakistorecwb'
+    name: 'Nexus Auto',
+    city: 'Canoas',
+    state: 'RS',
+    address: 'Av. Getúlio Vargas, 5200 - Centro',
+    phone: '(51) 99999-9999',
+    email: 'canoas@nexusauto.com',
+    instagram: '@nexus.auto'
   }
 ];
+
+export const getStoreByCity = (city, state) => {
+  return stores.find(s => s.city.toLowerCase() === city.toLowerCase() && s.state === state) || stores[0];
+};

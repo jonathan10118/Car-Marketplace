@@ -1,172 +1,149 @@
-import { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useState, useMemo } from 'react';
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import HeroSection from '../components/HeroSection';
 import VehicleCard from '../components/VehicleCard';
 import SearchBar from '../components/SearchBar';
+import FilterPanel from '../components/FilterPanel';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { vehicles } from '../mocks/vehicles.js';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useTranslation } from '../translations';
 
-// Importar as páginas quando forem criadas
-// import HomePage from '../pages/HomePage';
-// import LoginPage from '../pages/LoginPage';
-// import DashboardPage from '../pages/DashboardPage';
+// Páginas Principais
+import LoginPage from '../pages/LoginPage';
+import RegisterPage from '../pages/RegisterPage';
+import VehiclesPage from '../pages/VehiclesPage';
+import VehicleDetailPage from '../pages/VehicleDetailPage';
+import FavoritesPage from '../pages/FavoritesPage';
+import ProfilePage from '../pages/ProfilePage';
+import SettingsPage from '../pages/SettingsPage';
+
+// Páginas Institucionais e Suporte
+import AboutPage from '../pages/AboutPage';
+import ContactPage from '../pages/ContactPage';
+import HelpPage from '../pages/HelpPage';
+import FaqPage from '../pages/FaqPage';
+import TermsPage from '../pages/TermsPage';
+import PrivacyPage from '../pages/PrivacyPage';
 
 const HomePage = () => {
-  const { language } = useLanguage();
-  const t = useTranslation(language);
-  const [filteredVehicles, setFilteredVehicles] = useState(vehicles);
-  const [hasSearched, setHasSearched] = useState(false);
+  const navigate = useNavigate();
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  const handleSearch = (filters) => {
-    setHasSearched(true);
-    
-    let results = vehicles.filter(vehicle => {
-      const matchType = !filters.vehicleType || vehicle.type === filters.vehicleType;
-      const matchBrand = !filters.brand || vehicle.brand.toLowerCase().includes(filters.brand.toLowerCase());
-      const matchModel = !filters.model || vehicle.model.toLowerCase().includes(filters.model.toLowerCase());
-      const matchMinPrice = !filters.minPrice || vehicle.price >= Number(filters.minPrice);
-      const matchMaxPrice = !filters.maxPrice || vehicle.price <= Number(filters.maxPrice);
-      const matchYear = !filters.year || vehicle.year === Number(filters.year);
-      const matchLocation = !filters.location || 
-        vehicle.city.toLowerCase().includes(filters.location.toLowerCase()) ||
-        vehicle.state.toLowerCase().includes(filters.location.toLowerCase());
-      const matchStoreType = !filters.storeType || vehicle.store?.type === filters.storeType;
+  // 6 veículos fixos e balanceados para a Home (2 carros, 2 caminhonetes, 2 motos - sem repetição)
+  const featuredVehicles = useMemo(() => {
+    return [
+      vehicles.find(v => v.id === 1) || vehicles[0],   // Porsche 911 (Carro Premium)
+      vehicles.find(v => v.id === 21) || vehicles[20], // VW Gol (Carro)
+      vehicles.find(v => v.id === 51) || vehicles[50], // VW Amarok (Caminhonete)
+      vehicles.find(v => v.id === 56) || vehicles[55], // Ford Ranger (Caminhonete)
+      vehicles.find(v => v.id === 61) || vehicles[60], // Honda CG 160 (Moto)
+      vehicles.find(v => v.id === 71) || vehicles[70], // Kawasaki Ninja 400 (Moto)
+    ];
+  }, []);
 
-      return matchType && matchBrand && matchModel && matchMinPrice && matchMaxPrice && matchYear && matchLocation && matchStoreType;
-    });
-
-    setFilteredVehicles(results);
+  const handleSearch = (searchTerm) => {
+    // Ao buscar na Home, direcionar para o catálogo completo
+    if (searchTerm && searchTerm.trim()) {
+      navigate(`/vehicles`);
+    }
   };
 
-  const handleClearFilters = () => {
-    setHasSearched(false);
-    setFilteredVehicles(vehicles);
+  const handleApplyFilters = () => {
+    navigate('/vehicles');
   };
-
-  const resultsCount = filteredVehicles.length;
-  const resultsMessage = t.vehicles.resultsFound.replace('{count}', resultsCount);
 
   return (
     <>
       <HeroSection />
       
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar 
+        onSearch={handleSearch} 
+        onFilterToggle={() => setIsFilterOpen(true)}
+      />
+      
+      <FilterPanel
+        isOpen={isFilterOpen}
+        onClose={() => setIsFilterOpen(false)}
+        onApply={handleApplyFilters}
+        onClear={() => {}}
+      />
       
       <section className="container" style={{ padding: 'var(--spacing-4xl) var(--spacing-lg)' }}>
-        {hasSearched && resultsCount > 0 && (
-          <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-xl)' }}>
-            <p style={{ fontSize: 'var(--text-lg)', color: 'var(--text-primary)', fontWeight: 500 }}>
-              {resultsMessage}
-            </p>
-          </div>
-        )}
+        <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-3xl)' }}>
+          <h2 style={{ fontSize: 'var(--text-3xl)', fontWeight: 800, marginBottom: 'var(--spacing-sm)', color: 'var(--text-primary)' }}>
+            Destaques da Semana
+          </h2>
+        </div>
 
-        {hasSearched && resultsCount === 0 ? (
-          <div style={{ textAlign: 'center', padding: 'var(--spacing-4xl) 0' }}>
-            <h2 style={{ fontSize: 'var(--text-2xl)', fontWeight: 700, marginBottom: 'var(--spacing-md)', color: 'var(--text-primary)' }}>
-              {t.vehicles.noResults}
-            </h2>
-            <p style={{ fontSize: 'var(--text-lg)', color: 'var(--text-secondary)', marginBottom: 'var(--spacing-xl)', maxWidth: '600px', margin: '0 auto var(--spacing-xl)' }}>
-              {t.vehicles.noResultsDescription}
-            </p>
-            <div style={{ display: 'flex', gap: 'var(--spacing-md)', justifyContent: 'center' }}>
-              <Button variant="outline" size="lg" onClick={handleClearFilters}>
-                {t.vehicles.clearFilters}
-              </Button>
-              <Button variant="primary" size="lg" onClick={handleClearFilters}>
-                {t.vehicles.viewAll}
-              </Button>
-            </div>
-          </div>
-        ) : (
-          <>
-            {!hasSearched && (
-              <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-3xl)' }}>
-                <h2 style={{ fontSize: 'var(--text-3xl)', fontWeight: 700, marginBottom: 'var(--spacing-md)' }}>
-                  {t.vehicles.featured}
-                </h2>
-                <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-lg)', maxWidth: '600px', margin: '0 auto' }}>
-                  {t.vehicles.featuredDescription}
-                </p>
-              </div>
-            )}
+        {/* Grade com EXATAMENTE 6 veículos */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gap: 'var(--spacing-xl)',
+          marginBottom: 'var(--spacing-3xl)'
+        }}>
+          {featuredVehicles.map((vehicle) => (
+            <VehicleCard
+              key={vehicle.id}
+              {...vehicle}
+            />
+          ))}
+        </div>
 
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-              gap: 'var(--spacing-xl)',
-              marginBottom: 'var(--spacing-3xl)'
-            }}>
-              {filteredVehicles.map((vehicle) => (
-                <VehicleCard
-                  key={vehicle.id}
-                  type={vehicle.type}
-                  availability={vehicle.availability}
-                  {...vehicle}
-                  onClick={() => console.log('Ver detalhes:', vehicle.id)}
-                />
-              ))}
-            </div>
-
-            {!hasSearched && (
-              <div style={{ textAlign: 'center' }}>
-                <Button variant="outline" size="lg">
-                  {t.vehicles.viewAll}
-                </Button>
-              </div>
-            )}
-          </>
-        )}
+        {/* Link para o estoque completo */}
+        <div style={{ textAlign: 'center' }}>
+          <Link to="/vehicles">
+            <Button variant="outline" size="lg">
+              Ver todos os veículos →
+            </Button>
+          </Link>
+        </div>
       </section>
 
-      {!hasSearched && (
-        <section style={{ backgroundColor: 'var(--bg-secondary)', padding: 'var(--spacing-4xl) 0' }}>
-          <div className="container">
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-              gap: 'var(--spacing-2xl)',
-              textAlign: 'center'
-            }}>
-              <Card variant="default" padding="lg">
-                <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 700, color: 'var(--color-primary)', marginBottom: 'var(--spacing-sm)' }}>
-                  10.000+
-                </div>
-                <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 600, marginBottom: 'var(--spacing-xs)' }}>{t.stats.vehicles}</h3>
-                <p style={{ color: 'var(--text-secondary)', margin: 0 }}>{t.stats.vehiclesDesc}</p>
-              </Card>
+      {/* Destaques Institucionais */}
+      <section style={{ backgroundColor: 'var(--bg-surface)', padding: 'var(--spacing-4xl) 0', borderTop: '1px solid var(--border-color)' }}>
+        <div className="container">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+            gap: 'var(--spacing-xl)',
+            textAlign: 'center'
+          }}>
+            <Card variant="default" padding="lg" style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}>
+              <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 800, color: 'var(--color-primary-light)', marginBottom: 'var(--spacing-xs)' }}>
+                75
+              </div>
+              <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 700, marginBottom: 'var(--spacing-xs)', color: 'var(--text-primary)' }}>Veículos</h3>
+              <p style={{ color: 'var(--text-secondary)', margin: 0 }}>0 km no estoque oficial</p>
+            </Card>
 
-              <Card variant="default" padding="lg">
-                <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 700, color: 'var(--color-primary)', marginBottom: 'var(--spacing-sm)' }}>
-                  5.000+
-                </div>
-                <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 600, marginBottom: 'var(--spacing-xs)' }}>{t.stats.sales}</h3>
-                <p style={{ color: 'var(--text-secondary)', margin: 0 }}>{t.stats.salesDesc}</p>
-              </Card>
+            <Card variant="default" padding="lg" style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}>
+              <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 800, color: 'var(--color-primary-light)', marginBottom: 'var(--spacing-xs)' }}>
+                9
+              </div>
+              <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 700, marginBottom: 'var(--spacing-xs)', color: 'var(--text-primary)' }}>Cidades</h3>
+              <p style={{ color: 'var(--text-secondary)', margin: 0 }}>Paraná, Santa Catarina e RS</p>
+            </Card>
 
-              <Card variant="default" padding="lg">
-                <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 700, color: 'var(--color-primary)', marginBottom: 'var(--spacing-sm)' }}>
-                  98%
-                </div>
-                <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 600, marginBottom: 'var(--spacing-xs)' }}>{t.stats.satisfaction}</h3>
-                <p style={{ color: 'var(--text-secondary)', margin: 0 }}>{t.stats.satisfactionDesc}</p>
-              </Card>
+            <Card variant="default" padding="lg" style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}>
+              <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 800, color: 'var(--color-primary-light)', marginBottom: 'var(--spacing-xs)' }}>
+                100%
+              </div>
+              <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 700, marginBottom: 'var(--spacing-xs)', color: 'var(--text-primary)' }}>Revisados</h3>
+              <p style={{ color: 'var(--text-secondary)', margin: 0 }}>Garantia integral de fábrica</p>
+            </Card>
 
-              <Card variant="default" padding="lg">
-                <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 700, color: 'var(--color-primary)', marginBottom: 'var(--spacing-sm)' }}>
-                  24/7
-                </div>
-                <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 600, marginBottom: 'var(--spacing-xs)' }}>{t.stats.support}</h3>
-                <p style={{ color: 'var(--text-secondary)', margin: 0 }}>{t.stats.supportDesc}</p>
-              </Card>
-            </div>
+            <Card variant="default" padding="lg" style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}>
+              <div style={{ fontSize: 'var(--text-4xl)', fontWeight: 800, color: 'var(--color-primary-light)', marginBottom: 'var(--spacing-xs)' }}>
+                24/7
+              </div>
+              <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 700, marginBottom: 'var(--spacing-xs)', color: 'var(--text-primary)' }}>Suporte</h3>
+              <p style={{ color: 'var(--text-secondary)', margin: 0 }}>WhatsApp (41) 99999-9999</p>
+            </Card>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
     </>
   );
 };
@@ -174,14 +151,121 @@ const HomePage = () => {
 const AppRoutes = () => {
   return (
     <Routes>
-      {/* Rotas serão adicionadas aqui quando as páginas forem criadas */}
-      {/* <Route path="/" element={<HomePage />} /> */}
-      {/* <Route path="/login" element={<LoginPage />} /> */}
-      {/* <Route path="/dashboard" element={<DashboardPage />} /> */}
-      
-      {/* Página inicial com layout profissional */}
       <Route
         path="/"
+        element={
+          <MainLayout>
+            <HomePage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/vehicles"
+        element={
+          <MainLayout>
+            <VehiclesPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/vehicle/:id"
+        element={
+          <MainLayout>
+            <VehicleDetailPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/login"
+        element={
+          <MainLayout>
+            <LoginPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/register"
+        element={
+          <MainLayout>
+            <RegisterPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/favorites"
+        element={
+          <MainLayout>
+            <FavoritesPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/profile"
+        element={
+          <MainLayout>
+            <ProfilePage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/settings"
+        element={
+          <MainLayout>
+            <SettingsPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <MainLayout>
+            <AboutPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/contact"
+        element={
+          <MainLayout>
+            <ContactPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/help"
+        element={
+          <MainLayout>
+            <HelpPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/faq"
+        element={
+          <MainLayout>
+            <FaqPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/terms"
+        element={
+          <MainLayout>
+            <TermsPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/privacy"
+        element={
+          <MainLayout>
+            <PrivacyPage />
+          </MainLayout>
+        }
+      />
+      {/* Rota coringa para página inicial */}
+      <Route
+        path="*"
         element={
           <MainLayout>
             <HomePage />

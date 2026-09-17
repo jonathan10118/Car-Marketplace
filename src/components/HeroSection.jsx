@@ -1,35 +1,41 @@
-import Button from './Button';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useTranslation } from '../translations';
 import './HeroSection.css';
 
 const HeroSection = () => {
-  const { language } = useLanguage();
-  const t = useTranslation(language);
-
   return (
     <section className="hero-section">
       <div className="container hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            {t.hero.title}
+            BEM-VINDO À NEXUS AUTO
           </h1>
           <p className="hero-description">
-            {t.hero.description}
+            Seu próximo veículo está aqui!
           </p>
-          <div className="hero-actions">
-            <Button variant="primary" size="lg">
-              {t.hero.viewVehicles}
-            </Button>
-            <Button variant="outline" size="lg" style={{ borderColor: 'var(--color-white)', color: 'var(--color-white)' }}>
-              {t.hero.sellCar}
-            </Button>
+          
+          <div className="hero-benefits">
+            <div className="hero-benefit">
+              <span className="hero-benefit-icon">✓</span>
+              <span>Veículos Revisados</span>
+            </div>
+            <div className="hero-benefit">
+              <span className="hero-benefit-icon">✓</span>
+              <span>Condições Especiais</span>
+            </div>
+            <div className="hero-benefit">
+              <span className="hero-benefit-icon">✓</span>
+              <span>Segurança na Compra</span>
+            </div>
+            <div className="hero-benefit">
+              <span className="hero-benefit-icon">✓</span>
+              <span>As Melhores Marcas</span>
+            </div>
           </div>
         </div>
+        
         <div className="hero-image">
           <img 
-            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" 
-            alt="Carro de luxo em destaque"
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" 
+            alt="Veículo premium"
             className="hero-car-image"
           />
         </div>

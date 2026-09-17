@@ -7,6 +7,9 @@ export const translations = {
     about: 'About',
     login: 'Login',
     register: 'Register',
+    favorites: 'Favorites',
+    profile: 'Profile',
+    whatsapp: 'WhatsApp',
   },
   hero: {
     title: 'Find your next vehicle',
@@ -38,6 +41,16 @@ export const translations = {
     search: 'Search',
     clear: 'Clear',
   },
+  categories: {
+    title: 'Categories',
+    all: 'All',
+    cars: '🚗 Cars',
+    pickups: '🛻 Pickups',
+    motorcycles: '🏍️ Motorcycles',
+    carsDescription: 'Normal and luxury cars',
+    pickupsDescription: 'Pickups and trucks',
+    motorcyclesDescription: 'Motorcycles',
+  },
   vehicles: {
     featured: 'Featured Vehicles',
     featuredDescription: 'Check out our selection of featured vehicles',
@@ -47,6 +60,11 @@ export const translations = {
     noResults: 'Vehicle unavailable at the moment',
     noResultsDescription: 'We did not find vehicles with these criteria. Try changing the filters or check other available options.',
     clearFilters: 'Clear Filters',
+    sold: 'Sold',
+    reserved: 'Reserved',
+    available: 'Available',
+    car: 'Car',
+    motorcycle: 'Motorcycle',
   },
   stats: {
     vehicles: 'Vehicles',

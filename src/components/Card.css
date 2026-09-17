@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.dark .card {
+  border-color: var(--border-dark);
+}
+
 .card-default {
   box-shadow: var(--shadow-sm);
 }

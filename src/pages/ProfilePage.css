@@ -1,0 +1,108 @@
+.profile-page {
+  padding: var(--spacing-4xl) var(--spacing-lg);
+  background-color: var(--bg-dark);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.profile-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.profile-header h1 {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--text-primary-dark);
+  margin: 0;
+}
+
+.profile-content {
+  max-width: 600px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-tertiary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary-dark);
+}
+
+.profile-avatar svg {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-details h2 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text-primary-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.profile-details p {
+  color: var(--text-secondary-dark);
+  margin: 0;
+}
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.profile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--bg-tertiary-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  color: var(--text-primary-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.profile-menu-item:hover {
+  background-color: var(--bg-surface);
+  border-color: var(--color-primary);
+}
+
+.profile-menu-item-danger {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.profile-menu-item-danger:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: var(--color-error);
+}
+
+@media (max-width: 640px) {
+  .profile-page {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+  }
+
+  .profile-header h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}

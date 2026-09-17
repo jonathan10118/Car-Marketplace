@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { useTranslation } from '../translations';
@@ -8,6 +8,7 @@ const LanguageSelector = () => {
   const { language, changeLanguage } = useLanguage();
   const { theme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
   const t = useTranslation(language);
 
   const languages = [
@@ -18,8 +19,24 @@ const LanguageSelector = () => {
 
   const currentLang = languages.find(l => l.code === language) || languages[0];
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
+
   return (
-    <div className={`language-selector language-selector-${theme}`}>
+    <div className={`language-selector language-selector-${theme}`} ref={dropdownRef}>
       <button
         className="language-button"
         onClick={() => setIsOpen(!isOpen)}
