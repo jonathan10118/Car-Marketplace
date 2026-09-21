@@ -17,6 +17,7 @@ import VehicleDetailPage from '../pages/VehicleDetailPage';
 import FavoritesPage from '../pages/FavoritesPage';
 import ProfilePage from '../pages/ProfilePage';
 import SettingsPage from '../pages/SettingsPage';
+import BusinessPage from '../pages/BusinessPage';
 
 // Páginas Institucionais e Suporte
 import AboutPage from '../pages/AboutPage';
@@ -43,9 +44,9 @@ const HomePage = () => {
   }, []);
 
   const handleSearch = (searchTerm) => {
-    // Ao buscar na Home, direcionar para o catálogo completo
+    // Ao buscar na Home, direcionar para o catálogo com o termo de busca
     if (searchTerm && searchTerm.trim()) {
-      navigate(`/vehicles`);
+      navigate(`/vehicles?search=${encodeURIComponent(searchTerm)}`);
     }
   };
 
@@ -76,13 +77,32 @@ const HomePage = () => {
           </h2>
         </div>
 
-        {/* Grade com EXATAMENTE 6 veículos */}
-        <div style={{
+        {/* Grade com EXATAMENTE 6 veículos em uma fileira no desktop */}
+        <div className="featured-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-          gap: 'var(--spacing-xl)',
+          gridTemplateColumns: 'repeat(6, minmax(220px, 1fr))',
+          gap: 'var(--spacing-lg)',
           marginBottom: 'var(--spacing-3xl)'
         }}>
+
+          {/* Responsivo: tablet e celular mantêm grid adaptativo */}
+          <style>{`
+            @media (max-width: 1200px) {
+              .featured-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+              }
+            }
+            @media (max-width: 768px) {
+              .featured-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+              }
+            }
+            @media (max-width: 480px) {
+              .featured-grid {
+                grid-template-columns: 1fr !important;
+              }
+            }
+          `}</style>
           {featuredVehicles.map((vehicle) => (
             <VehicleCard
               key={vehicle.id}
@@ -212,6 +232,14 @@ const AppRoutes = () => {
         element={
           <MainLayout>
             <SettingsPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/business"
+        element={
+          <MainLayout>
+            <BusinessPage />
           </MainLayout>
         }
       />

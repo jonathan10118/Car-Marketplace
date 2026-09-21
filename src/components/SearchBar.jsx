@@ -6,10 +6,7 @@ const SearchBar = ({ onSearch, onFilterToggle, defaultValue = '' }) => {
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
-    // Busca em tempo real ou ao submeter
-    if (onSearch) {
-      onSearch(e.target.value);
-    }
+    // Apenas atualiza o estado, não executa busca
   };
 
   const handleSubmit = (e) => {

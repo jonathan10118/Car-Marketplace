@@ -11,7 +11,6 @@ const VehicleDetailPage = () => {
   const location = useLocation();
 
   const [vehicle, setVehicle] = useState(null);
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [user, setUser] = useState(null);
   const [isFavorite, setIsFavorite] = useState(false);
 
@@ -32,8 +31,9 @@ const VehicleDetailPage = () => {
     const foundVehicle = vehicles.find(v => v.id === parseInt(id));
     if (foundVehicle) {
       setVehicle(foundVehicle);
-      setSelectedImageIndex(0);
     }
+    // Scroll para o topo ao entrar na página de detalhes
+    window.scrollTo(0, 0);
   }, [id]);
 
   useEffect(() => {
@@ -146,33 +146,28 @@ const VehicleDetailPage = () => {
     );
   }
 
-  const images = vehicle.images && vehicle.images.length > 0 ? vehicle.images : [
-    'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
-    'https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80',
-    'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80'
-  ];
+  const mainImage = vehicle.images && vehicle.images.length > 0 
+    ? vehicle.images[0] 
+    : 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80';
 
   return (
     <div className="vehicle-detail-page">
       <div className="container">
         <div className="detail-navigation">
           <Link to="/vehicles" className="back-link">
-            ← Voltar para o Catálogo de Veículos
+            ←
           </Link>
         </div>
 
         <div className="vehicle-detail-content">
-          {/* Coluna da Esquerda: Galeria */}
-          <div className="vehicle-gallery-section">
+          {/* Coluna da Esquerda: Imagem Principal */}
+          <div className="vehicle-image-section">
             <div className="main-image-container">
               <img 
-                src={images[selectedImageIndex]} 
+                src={mainImage} 
                 alt={`${vehicle.brand} ${vehicle.model}`}
                 className="main-image-element"
               />
-              <span className="image-counter">
-                {selectedImageIndex + 1} / {images.length}
-              </span>
               <button 
                 type="button"
                 className={`favorite-overlay-btn ${isFavorite ? 'active' : ''}`}
@@ -181,19 +176,6 @@ const VehicleDetailPage = () => {
               >
                 {isFavorite ? '❤️' : '🤍'}
               </button>
-            </div>
-            
-            <div className="thumbnail-gallery-row">
-              {images.map((img, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  className={`thumbnail-btn ${selectedImageIndex === idx ? 'active' : ''}`}
-                  onClick={() => setSelectedImageIndex(idx)}
-                >
-                  <img src={img} alt={`Foto ${idx + 1}`} />
-                </button>
-              ))}
             </div>
 
             {/* Descrição do Veículo */}
@@ -236,7 +218,8 @@ const VehicleDetailPage = () => {
                   onClick={handleInterestClick}
                   className="btn-interest-primary"
                 >
-                  Tenho interesse neste veículo
+                  <span className="whatsapp-icon">📱</span>
+                  Tenho interesse
                 </Button>
                 
                 <Button 

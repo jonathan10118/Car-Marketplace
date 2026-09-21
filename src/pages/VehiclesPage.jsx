@@ -1,4 +1,5 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import VehicleCard from '../components/VehicleCard';
 import SearchBar from '../components/SearchBar';
 import FilterPanel from '../components/FilterPanel';
@@ -7,6 +8,7 @@ import { vehicles } from '../mocks/vehicles.js';
 import './VehiclesPage.css';
 
 const VehiclesPage = () => {
+  const [searchParams] = useSearchParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [filters, setFilters] = useState({
@@ -14,6 +16,13 @@ const VehiclesPage = () => {
     state: 'all',
     city: 'all'
   });
+
+  useEffect(() => {
+    const searchParam = searchParams.get('search');
+    if (searchParam) {
+      setSearchTerm(searchParam);
+    }
+  }, [searchParams]);
 
   const filteredVehicles = useMemo(() => {
     let result = [...vehicles];
