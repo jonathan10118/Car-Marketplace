@@ -46,13 +46,14 @@ const VehiclesPage = () => {
     if (filters.vehicleType !== 'all') {
       result = result.filter(v => {
         if (filters.vehicleType === 'car') {
-          return v.type === 'car' && v.category !== 'pickup';
+          return (v.category === 'carro' || v.category === 'car' || v.type === 'carro' || v.type === 'car') && 
+                 v.category !== 'caminhonete' && v.category !== 'pickup' && v.type !== 'caminhonete' && v.type !== 'pickup';
         }
         if (filters.vehicleType === 'pickup') {
-          return v.category === 'pickup';
+          return v.category === 'caminhonete' || v.category === 'pickup' || v.type === 'caminhonete' || v.type === 'pickup';
         }
         if (filters.vehicleType === 'motorcycle') {
-          return v.type === 'motorcycle';
+          return v.category === 'moto' || v.category === 'motorcycle' || v.type === 'moto' || v.type === 'motorcycle';
         }
         return true;
       });

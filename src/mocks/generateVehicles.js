@@ -3,6 +3,7 @@ import { writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { stores } from './stores.js';
+import { vehicles as existingVehicles } from './vehicles.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -135,29 +136,29 @@ const motorcycleImageSets = [
 
 // 1. Definição dos 20 Carros Premium/Luxo (Mercedes-Benz, BMW, Audi, Porsche)
 const luxuryCars = [
-  { brand: 'Porsche', model: '911 Carrera S', version: '3.0 Twin-Turbo PDK', price: 920000, fuel: 'Gasolina', color: 'Cinza Agata', features: ['Câmbio PDK 8 Marchas', 'Sport Chrono', 'Escape Esportivo'] },
+  { brand: 'Porsche', model: '911 Carrera', version: '3.0 Twin-Turbo PDK', price: 920000, fuel: 'Gasolina', color: 'Cinza Agata', features: ['Câmbio PDK 8 Marchas', 'Sport Chrono', 'Escape Esportivo'] },
   { brand: 'Porsche', model: 'Macan GTS', version: '2.9 V6 Biturbo', price: 680000, fuel: 'Gasolina', color: 'Preto Vulcano', features: ['Tração Integral', 'Suspensão Pneumática', 'Bancos Esportivos'] },
   { brand: 'Porsche', model: 'Cayenne Coupé', version: '3.0 V6 Turbo E-Hybrid', price: 790000, fuel: 'Híbrido', color: 'Branco Carrara', features: ['Teto Panorâmico', 'Pacote Sport', 'Faróis Matrix LED'] },
   { brand: 'Porsche', model: 'Panamera 4S', version: '2.9 V6 E-Hybrid', price: 850000, fuel: 'Híbrido', color: 'Azul Gentian', features: ['Eixo Traseiro Direcional', 'Som Burmester', 'Interior em Couro Club'] },
   { brand: 'Porsche', model: 'Taycan 4S', version: 'Elétrico 530cv', price: 740000, fuel: 'Elétrico', color: 'Cinza Vulcano', features: ['Bateria Performance Plus', 'Carga Ultra-Rápida', 'Porsche Active Suspension'] },
 
-  { brand: 'Mercedes-Benz', model: 'Classe C C300', version: 'AMG Line 2.0 Turbo', price: 420000, fuel: 'Híbrido Leve', color: 'Prata High-Tech', features: ['Painel MBUX 12.3"', 'Teto Solar Panorâmico', 'Rodas AMG 19"'] },
-  { brand: 'Mercedes-Benz', model: 'Classe E E350', version: 'Exclusive 2.0 Turbo', price: 580000, fuel: 'Híbrido Leve', color: 'Preto Obsidiana', features: ['Som Burmester 3D', 'Assentos Climatizados', 'Head-Up Display'] },
-  { brand: 'Mercedes-Benz', model: 'Classe S S500', version: '4MATIC Longo 3.0', price: 1150000, fuel: 'Híbrido Leve', color: 'Preto Ônix', features: ['Suspensão Airmatic', 'Condução Autônoma Nível 3', 'Massagem nos Bancos'] },
-  { brand: 'Mercedes-Benz', model: 'GLC 300', version: '4MATIC Coupe AMG Line', price: 495000, fuel: 'Híbrido Leve', color: 'Cinza Selenita', features: ['Faróis Digital Light', 'Tração 4MATIC', 'Câmera 360 Graus'] },
-  { brand: 'Mercedes-Benz', model: 'GLE 450', version: '4MATIC 3.0 Turbo 7 Lugares', price: 720000, fuel: 'Híbrido Leve', color: 'Azul Cavansite', features: ['7 Lugares', 'E-Active Body Control', 'Assistente Ativo de Direção'] },
+  { brand: 'Mercedes-Benz', model: 'Classe C C300', version: 'AMG Line 2.0 Turbo', price: 420000, fuel: 'Híbrido', color: 'Prata High-Tech', features: ['Painel MBUX 12.3"', 'Teto Solar Panorâmico', 'Rodas AMG 19"'] },
+  { brand: 'Mercedes-Benz', model: 'Classe E E350', version: 'Exclusive 2.0 Turbo', price: 580000, fuel: 'Híbrido', color: 'Preto Obsidiana', features: ['Som Burmester 3D', 'Assentos Climatizados', 'Head-Up Display'] },
+  { brand: 'Mercedes-Benz', model: 'Classe S S500', version: '4MATIC Longo 3.0', price: 1150000, fuel: 'Híbrido', color: 'Preto Ônix', features: ['Suspensão Airmatic', 'Condução Autônoma Nível 3', 'Massagem nos Bancos'] },
+  { brand: 'Mercedes-Benz', model: 'GLC 300', version: '4MATIC Coupe AMG Line', price: 495000, fuel: 'Híbrido', color: 'Cinza Selenita', features: ['Faróis Digital Light', 'Tração 4MATIC', 'Câmera 360 Graus'] },
+  { brand: 'Mercedes-Benz', model: 'GLE 450', version: '4MATIC 3.0 Turbo 7 Lugares', price: 720000, fuel: 'Híbrido', color: 'Azul Cavansite', features: ['7 Lugares', 'E-Active Body Control', 'Assistente Ativo de Direção'] },
 
   { brand: 'BMW', model: 'Série 3 330i', version: 'M Sport 2.0 Turbo', price: 385000, fuel: 'Flex', color: 'Azul Portimão', features: ['Pacote M Sport', 'BMW Curved Display', 'Som Harman Kardon'] },
-  { brand: 'BMW', model: 'Série 5 530i', version: 'M Sport 2.0 Turbo', price: 540000, fuel: 'Híbrido Leve', color: 'Preto Carbono', features: ['Controle por Gestos', 'Faróis Laserlight', 'Parking Assistant Plus'] },
-  { brand: 'BMW', model: 'Série 7 740i', version: 'Pure Excellence 3.0', price: 980000, fuel: 'Híbrido Leve', color: 'Cinza Dravit', features: ['BMW Theater Screen 31"', 'Portas Automáticas', 'Bancos Executivos'] },
+  { brand: 'BMW', model: 'Série 5 530i', version: 'M Sport 2.0 Turbo', price: 540000, fuel: 'Híbrido', color: 'Preto Carbono', features: ['Controle por Gestos', 'Faróis Laserlight', 'Parking Assistant Plus'] },
+  { brand: 'BMW', model: 'Série 7 740i', version: 'Pure Excellence 3.0', price: 980000, fuel: 'Híbrido', color: 'Cinza Dravit', features: ['BMW Theater Screen 31"', 'Portas Automáticas', 'Bancos Executivos'] },
   { brand: 'BMW', model: 'X3 xDrive30i', version: 'M Sport 2.0 Turbo', price: 460000, fuel: 'Gasolina', color: 'Branco Alpino', features: ['Tração Integral xDrive', 'Teto Panorâmico', 'Live Cockpit Professional'] },
   { brand: 'BMW', model: 'X5 xDrive50e', version: 'M Sport Plug-in Hybrid', price: 760000, fuel: 'Híbrido', color: 'Azul Phytonic', features: ['Suspensão a Ar Adaptativa', 'Alcance Elétrico 100km', 'Ar Quadrizone'] },
 
   { brand: 'Audi', model: 'A4 Sedan', version: 'Performance Black 2.0 TFSI', price: 355000, fuel: 'Gasolina', color: 'Cinza Daytona', features: ['Virtual Cockpit Plus', 'Tração Quattro', 'Faróis Full LED Matrix'] },
-  { brand: 'Audi', model: 'A6 Sedan', version: 'Performance 2.0 TFSI', price: 510000, fuel: 'Híbrido Leve', color: 'Preto Mito', features: ['Audi Pre Sense', 'Ar-condicionado de 4 Zonas', 'Bancos em Couro Valcona'] },
-  { brand: 'Audi', model: 'A8 L', version: 'Performance Black 3.0 TFSI', price: 940000, fuel: 'Híbrido Leve', color: 'Prata Florete', features: ['Eixo Traseiro Dinâmico', 'Faróis HD Matrix Laser', 'Som Bang & Olufsen 3D'] },
+  { brand: 'Audi', model: 'A6 Sedan', version: 'Performance 2.0 TFSI', price: 510000, fuel: 'Híbrido', color: 'Preto Mito', features: ['Audi Pre Sense', 'Ar-condicionado de 4 Zonas', 'Bancos em Couro Valcona'] },
+  { brand: 'Audi', model: 'A8 L', version: 'Performance Black 3.0 TFSI', price: 940000, fuel: 'Híbrido', color: 'Prata Florete', features: ['Eixo Traseiro Dinâmico', 'Faróis HD Matrix Laser', 'Som Bang & Olufsen 3D'] },
   { brand: 'Audi', model: 'Q5 SUV', version: 'Performance Black TFSIe Hybrid', price: 475000, fuel: 'Híbrido', color: 'Branco Geleira', features: ['Tração Quattro Ultra', 'Piloto Automático Adaptativo', 'Teto Solar Open Sky'] },
-  { brand: 'Audi', model: 'Q7 SUV', version: 'S line 3.0 TFSI 7 Lugares', price: 690000, fuel: 'Híbrido Leve', color: 'Azul Navarra', features: ['7 Lugares', 'Suspensão a Ar Adaptativa', 'Audi Drive Select'] }
+  { brand: 'Audi', model: 'Q7 SUV', version: 'S line 3.0 TFSI 7 Lugares', price: 690000, fuel: 'Híbrido', color: 'Azul Navarra', features: ['7 Lugares', 'Suspensão a Ar Adaptativa', 'Audi Drive Select'] }
 ];
 
 // 2. Definição dos 30 Carros Normais
@@ -258,16 +259,22 @@ function getStoreForLocation(loc) {
   return stores.find(s => s.city.toLowerCase() === loc.city.toLowerCase() && s.state === loc.state) || stores[0];
 }
 
+function getImagesForVehicle(id, fallbackImages) {
+  const existing = existingVehicles?.find(v => v.id === id);
+  return (existing && existing.images && existing.images.length > 0) ? existing.images : fallbackImages;
+}
+
 // 1. 20 Carros Premium (IDs 1-20)
 luxuryCars.forEach((item, idx) => {
   const loc = getLocation(idx);
   const store = getStoreForLocation(loc);
-  const images = luxuryCarImageSets[idx % luxuryCarImageSets.length];
+  const images = getImagesForVehicle(currentId, luxuryCarImageSets[idx % luxuryCarImageSets.length]);
 
   vehicles.push({
     id: currentId,
-    type: 'car',
-    category: 'car',
+    name: `${item.brand} ${item.model}`,
+    type: 'carro',
+    category: 'carro',
     isPremium: true,
     brand: item.brand,
     model: item.model,
@@ -303,12 +310,13 @@ luxuryCars.forEach((item, idx) => {
 normalCars.forEach((item, idx) => {
   const loc = getLocation(idx);
   const store = getStoreForLocation(loc);
-  const images = normalCarImageSets[idx % normalCarImageSets.length];
+  const images = getImagesForVehicle(currentId, normalCarImageSets[idx % normalCarImageSets.length]);
 
   vehicles.push({
     id: currentId,
-    type: 'car',
-    category: 'car',
+    name: `${item.brand} ${item.model}`,
+    type: 'carro',
+    category: 'carro',
     isPremium: false,
     brand: item.brand,
     model: item.model,
@@ -344,12 +352,13 @@ normalCars.forEach((item, idx) => {
 pickups.forEach((item, idx) => {
   const loc = getLocation(idx);
   const store = getStoreForLocation(loc);
-  const images = pickupImageSets[idx % pickupImageSets.length];
+  const images = getImagesForVehicle(currentId, pickupImageSets[idx % pickupImageSets.length]);
 
   vehicles.push({
     id: currentId,
-    type: 'car',
-    category: 'pickup',
+    name: `${item.brand} ${item.model}`,
+    type: 'caminhonete',
+    category: 'caminhonete',
     isPremium: false,
     brand: item.brand,
     model: item.model,
@@ -385,12 +394,13 @@ pickups.forEach((item, idx) => {
 motorcycles.forEach((item, idx) => {
   const loc = getLocation(idx);
   const store = getStoreForLocation(loc);
-  const images = motorcycleImageSets[idx % motorcycleImageSets.length];
+  const images = getImagesForVehicle(currentId, motorcycleImageSets[idx % motorcycleImageSets.length]);
 
   vehicles.push({
     id: currentId,
-    type: 'motorcycle',
-    category: 'motorcycle',
+    name: `${item.brand} ${item.model}`,
+    type: 'moto',
+    category: 'moto',
     isPremium: false,
     brand: item.brand,
     model: item.model,
@@ -438,16 +448,18 @@ export const validateCatalog = () => {
   const models = {};
 
   vehicles.forEach(vehicle => {
-    if (vehicle.type === 'car') {
-      if (vehicle.category === 'pickup') {
-        counts.pickups++;
-      } else if (vehicle.isPremium) {
-        counts.luxuryCars++;
-      } else {
-        counts.normalCars++;
-      }
-    } else if (vehicle.type === 'motorcycle') {
+    const isPickup = vehicle.category === 'caminhonete' || vehicle.category === 'pickup' || vehicle.type === 'caminhonete' || vehicle.type === 'pickup';
+    const isMoto = vehicle.category === 'moto' || vehicle.category === 'motorcycle' || vehicle.type === 'moto' || vehicle.type === 'motorcycle';
+    const isCar = !isPickup && !isMoto;
+
+    if (isPickup) {
+      counts.pickups++;
+    } else if (isMoto) {
       counts.motorcycles++;
+    } else if (vehicle.isPremium) {
+      counts.luxuryCars++;
+    } else {
+      counts.normalCars++;
     }
 
     brands[vehicle.brand] = (brands[vehicle.brand] || 0) + 1;

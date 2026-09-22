@@ -2,31 +2,32 @@
 export const vehicles = [
   {
     "id": 1,
-    "type": "car",
-    "category": "car",
+    "name": "Porsche 911 Carrera",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
-    "brand": "BMW",
-    "model": "M5 Competition",
-    "version": "4.4 V8 Twin-Turbo",
+    "brand": "Porsche",
+    "model": "911 Carrera",
+    "version": "3.0 Twin-Turbo PDK",
     "year": 2024,
     "yearFabrication": 2024,
     "price": 920000,
     "mileage": 0,
     "city": "Curitiba",
     "state": "PR",
-    "description": "BMW M5 Competition 4.4 V8 Twin-Turbo 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Curitiba.",
+    "description": "Porsche 911 Carrera 3.0 Twin-Turbo PDK 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Curitiba.",
     "images": [
       "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80",
       "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
       "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80"
     ],
     "fuel": "Gasolina",
-    "color": "Azul Magma",
+    "color": "Cinza Agata",
     "plate": "NEX-001",
     "features": [
-      "Câmbio M-Steptronic 8 Marchas",
-      "M xDrive",
-      "M Sport Exhaust",
+      "Câmbio PDK 8 Marchas",
+      "Sport Chrono",
+      "Escape Esportivo",
       "Garantia de Fábrica",
       "Revisão Feita"
     ],
@@ -44,8 +45,9 @@ export const vehicles = [
   },
   {
     "id": 2,
-    "type": "car",
-    "category": "car",
+    "name": "Porsche Macan GTS",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Macan GTS",
@@ -86,8 +88,9 @@ export const vehicles = [
   },
   {
     "id": 3,
-    "type": "car",
-    "category": "car",
+    "name": "Porsche Cayenne Coupé",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Cayenne Coupé",
@@ -128,8 +131,9 @@ export const vehicles = [
   },
   {
     "id": 4,
-    "type": "car",
-    "category": "car",
+    "name": "Porsche Panamera 4S",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Panamera 4S",
@@ -170,8 +174,9 @@ export const vehicles = [
   },
   {
     "id": 5,
-    "type": "car",
-    "category": "car",
+    "name": "Porsche Taycan 4S",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Taycan 4S",
@@ -212,8 +217,9 @@ export const vehicles = [
   },
   {
     "id": 6,
-    "type": "car",
-    "category": "car",
+    "name": "Mercedes-Benz Classe C C300",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "Classe C C300",
@@ -230,7 +236,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
       "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Prata High-Tech",
     "plate": "NEX-006",
     "features": [
@@ -254,8 +260,9 @@ export const vehicles = [
   },
   {
     "id": 7,
-    "type": "car",
-    "category": "car",
+    "name": "Mercedes-Benz Classe E E350",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "Classe E E350",
@@ -272,7 +279,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Preto Obsidiana",
     "plate": "NEX-007",
     "features": [
@@ -296,8 +303,9 @@ export const vehicles = [
   },
   {
     "id": 8,
-    "type": "car",
-    "category": "car",
+    "name": "Mercedes-Benz Classe S S500",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "Classe S S500",
@@ -314,7 +322,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
       "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Preto Ônix",
     "plate": "NEX-008",
     "features": [
@@ -338,8 +346,9 @@ export const vehicles = [
   },
   {
     "id": 9,
-    "type": "car",
-    "category": "car",
+    "name": "Mercedes-Benz GLC 300",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "GLC 300",
@@ -356,7 +365,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80",
       "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Cinza Selenita",
     "plate": "NEX-009",
     "features": [
@@ -380,8 +389,9 @@ export const vehicles = [
   },
   {
     "id": 10,
-    "type": "car",
-    "category": "car",
+    "name": "Mercedes-Benz GLE 450",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "GLE 450",
@@ -398,7 +408,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Azul Cavansite",
     "plate": "NEX-010",
     "features": [
@@ -422,8 +432,9 @@ export const vehicles = [
   },
   {
     "id": 11,
-    "type": "car",
-    "category": "car",
+    "name": "BMW Série 3 330i",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "BMW",
     "model": "Série 3 330i",
@@ -464,8 +475,9 @@ export const vehicles = [
   },
   {
     "id": 12,
-    "type": "car",
-    "category": "car",
+    "name": "BMW Série 5 530i",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "BMW",
     "model": "Série 5 530i",
@@ -482,7 +494,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Preto Carbono",
     "plate": "NEX-012",
     "features": [
@@ -506,8 +518,9 @@ export const vehicles = [
   },
   {
     "id": 13,
-    "type": "car",
-    "category": "car",
+    "name": "BMW Série 7 740i",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "BMW",
     "model": "Série 7 740i",
@@ -524,7 +537,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
       "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Cinza Dravit",
     "plate": "NEX-013",
     "features": [
@@ -548,8 +561,9 @@ export const vehicles = [
   },
   {
     "id": 14,
-    "type": "car",
-    "category": "car",
+    "name": "BMW X3 xDrive30i",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "BMW",
     "model": "X3 xDrive30i",
@@ -590,8 +604,9 @@ export const vehicles = [
   },
   {
     "id": 15,
-    "type": "car",
-    "category": "car",
+    "name": "BMW X5 xDrive50e",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "BMW",
     "model": "X5 xDrive50e",
@@ -632,8 +647,9 @@ export const vehicles = [
   },
   {
     "id": 16,
-    "type": "car",
-    "category": "car",
+    "name": "Audi A4 Sedan",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Audi",
     "model": "A4 Sedan",
@@ -674,8 +690,9 @@ export const vehicles = [
   },
   {
     "id": 17,
-    "type": "car",
-    "category": "car",
+    "name": "Audi A6 Sedan",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Audi",
     "model": "A6 Sedan",
@@ -692,7 +709,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Preto Mito",
     "plate": "NEX-017",
     "features": [
@@ -716,8 +733,9 @@ export const vehicles = [
   },
   {
     "id": 18,
-    "type": "car",
-    "category": "car",
+    "name": "Audi A8 L",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Audi",
     "model": "A8 L",
@@ -734,7 +752,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
       "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Prata Florete",
     "plate": "NEX-018",
     "features": [
@@ -758,8 +776,9 @@ export const vehicles = [
   },
   {
     "id": 19,
-    "type": "car",
-    "category": "car",
+    "name": "Audi Q5 SUV",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Audi",
     "model": "Q5 SUV",
@@ -800,8 +819,9 @@ export const vehicles = [
   },
   {
     "id": 20,
-    "type": "car",
-    "category": "car",
+    "name": "Audi Q7 SUV",
+    "type": "carro",
+    "category": "carro",
     "isPremium": true,
     "brand": "Audi",
     "model": "Q7 SUV",
@@ -818,7 +838,7 @@ export const vehicles = [
       "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
     ],
-    "fuel": "Híbrido Leve",
+    "fuel": "Híbrido",
     "color": "Azul Navarra",
     "plate": "NEX-020",
     "features": [
@@ -842,8 +862,9 @@ export const vehicles = [
   },
   {
     "id": 21,
-    "type": "car",
-    "category": "car",
+    "name": "Volkswagen Gol",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Gol",
@@ -884,8 +905,9 @@ export const vehicles = [
   },
   {
     "id": 22,
-    "type": "car",
-    "category": "car",
+    "name": "Volkswagen Polo",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Polo",
@@ -926,8 +948,9 @@ export const vehicles = [
   },
   {
     "id": 23,
-    "type": "car",
-    "category": "car",
+    "name": "Volkswagen Nivus",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Nivus",
@@ -968,8 +991,9 @@ export const vehicles = [
   },
   {
     "id": 24,
-    "type": "car",
-    "category": "car",
+    "name": "Volkswagen T-Cross",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "T-Cross",
@@ -1010,8 +1034,9 @@ export const vehicles = [
   },
   {
     "id": 25,
-    "type": "car",
-    "category": "car",
+    "name": "Volkswagen Virtus",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Virtus",
@@ -1052,8 +1077,9 @@ export const vehicles = [
   },
   {
     "id": 26,
-    "type": "car",
-    "category": "car",
+    "name": "Chevrolet Onix",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Onix",
@@ -1094,8 +1120,9 @@ export const vehicles = [
   },
   {
     "id": 27,
-    "type": "car",
-    "category": "car",
+    "name": "Chevrolet Onix Plus",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Onix Plus",
@@ -1136,8 +1163,9 @@ export const vehicles = [
   },
   {
     "id": 28,
-    "type": "car",
-    "category": "car",
+    "name": "Chevrolet Tracker",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Tracker",
@@ -1178,8 +1206,9 @@ export const vehicles = [
   },
   {
     "id": 29,
-    "type": "car",
-    "category": "car",
+    "name": "Chevrolet Cruze",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Cruze",
@@ -1220,8 +1249,9 @@ export const vehicles = [
   },
   {
     "id": 30,
-    "type": "car",
-    "category": "car",
+    "name": "Chevrolet Spin",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Spin",
@@ -1262,8 +1292,9 @@ export const vehicles = [
   },
   {
     "id": 31,
-    "type": "car",
-    "category": "car",
+    "name": "Ford Ka",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Ford",
     "model": "Ka",
@@ -1304,8 +1335,9 @@ export const vehicles = [
   },
   {
     "id": 32,
-    "type": "car",
-    "category": "car",
+    "name": "Ford Fiesta",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Ford",
     "model": "Fiesta",
@@ -1346,8 +1378,9 @@ export const vehicles = [
   },
   {
     "id": 33,
-    "type": "car",
-    "category": "car",
+    "name": "Ford Focus",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Ford",
     "model": "Focus",
@@ -1388,8 +1421,9 @@ export const vehicles = [
   },
   {
     "id": 34,
-    "type": "car",
-    "category": "car",
+    "name": "Ford Territory",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Ford",
     "model": "Territory",
@@ -1430,8 +1464,9 @@ export const vehicles = [
   },
   {
     "id": 35,
-    "type": "car",
-    "category": "car",
+    "name": "Toyota Corolla",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Corolla",
@@ -1472,8 +1507,9 @@ export const vehicles = [
   },
   {
     "id": 36,
-    "type": "car",
-    "category": "car",
+    "name": "Toyota Yaris",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Yaris",
@@ -1514,8 +1550,9 @@ export const vehicles = [
   },
   {
     "id": 37,
-    "type": "car",
-    "category": "car",
+    "name": "Toyota Corolla Cross",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Corolla Cross",
@@ -1556,8 +1593,9 @@ export const vehicles = [
   },
   {
     "id": 38,
-    "type": "car",
-    "category": "car",
+    "name": "Honda Civic",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Honda",
     "model": "Civic",
@@ -1598,8 +1636,9 @@ export const vehicles = [
   },
   {
     "id": 39,
-    "type": "car",
-    "category": "car",
+    "name": "Honda City",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Honda",
     "model": "City",
@@ -1640,8 +1679,9 @@ export const vehicles = [
   },
   {
     "id": 40,
-    "type": "car",
-    "category": "car",
+    "name": "Honda HR-V",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Honda",
     "model": "HR-V",
@@ -1682,8 +1722,9 @@ export const vehicles = [
   },
   {
     "id": 41,
-    "type": "car",
-    "category": "car",
+    "name": "Fiat Mobi",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Mobi",
@@ -1724,8 +1765,9 @@ export const vehicles = [
   },
   {
     "id": 42,
-    "type": "car",
-    "category": "car",
+    "name": "Fiat Argo",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Argo",
@@ -1766,8 +1808,9 @@ export const vehicles = [
   },
   {
     "id": 43,
-    "type": "car",
-    "category": "car",
+    "name": "Fiat Pulse",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Pulse",
@@ -1808,8 +1851,9 @@ export const vehicles = [
   },
   {
     "id": 44,
-    "type": "car",
-    "category": "car",
+    "name": "Fiat Fastback",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Fastback",
@@ -1850,8 +1894,9 @@ export const vehicles = [
   },
   {
     "id": 45,
-    "type": "car",
-    "category": "car",
+    "name": "Nissan Kicks",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Kicks",
@@ -1892,8 +1937,9 @@ export const vehicles = [
   },
   {
     "id": 46,
-    "type": "car",
-    "category": "car",
+    "name": "Nissan Versa",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Versa",
@@ -1934,8 +1980,9 @@ export const vehicles = [
   },
   {
     "id": 47,
-    "type": "car",
-    "category": "car",
+    "name": "Nissan Sentra",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Sentra",
@@ -1976,8 +2023,9 @@ export const vehicles = [
   },
   {
     "id": 48,
-    "type": "car",
-    "category": "car",
+    "name": "Renault Kwid",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Renault",
     "model": "Kwid",
@@ -2018,8 +2066,9 @@ export const vehicles = [
   },
   {
     "id": 49,
-    "type": "car",
-    "category": "car",
+    "name": "Renault Duster",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Renault",
     "model": "Duster",
@@ -2060,8 +2109,9 @@ export const vehicles = [
   },
   {
     "id": 50,
-    "type": "car",
-    "category": "car",
+    "name": "Renault Kardian",
+    "type": "carro",
+    "category": "carro",
     "isPremium": false,
     "brand": "Renault",
     "model": "Kardian",
@@ -2102,8 +2152,9 @@ export const vehicles = [
   },
   {
     "id": 51,
-    "type": "car",
-    "category": "pickup",
+    "name": "Volkswagen Amarok",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Amarok",
@@ -2144,8 +2195,9 @@ export const vehicles = [
   },
   {
     "id": 52,
-    "type": "car",
-    "category": "pickup",
+    "name": "Chevrolet Montana",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Montana",
@@ -2186,8 +2238,9 @@ export const vehicles = [
   },
   {
     "id": 53,
-    "type": "car",
-    "category": "pickup",
+    "name": "Chevrolet S10",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "S10",
@@ -2228,8 +2281,9 @@ export const vehicles = [
   },
   {
     "id": 54,
-    "type": "car",
-    "category": "pickup",
+    "name": "Chevrolet D20",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "D20",
@@ -2270,8 +2324,9 @@ export const vehicles = [
   },
   {
     "id": 55,
-    "type": "car",
-    "category": "pickup",
+    "name": "Chevrolet 250",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "250",
@@ -2312,8 +2367,9 @@ export const vehicles = [
   },
   {
     "id": 56,
-    "type": "car",
-    "category": "pickup",
+    "name": "Ford Ranger",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Ford",
     "model": "Ranger",
@@ -2354,8 +2410,9 @@ export const vehicles = [
   },
   {
     "id": 57,
-    "type": "car",
-    "category": "pickup",
+    "name": "Toyota Hilux",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Hilux",
@@ -2396,8 +2453,9 @@ export const vehicles = [
   },
   {
     "id": 58,
-    "type": "car",
-    "category": "pickup",
+    "name": "Mitsubishi Triton",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Mitsubishi",
     "model": "Triton",
@@ -2438,8 +2496,9 @@ export const vehicles = [
   },
   {
     "id": 59,
-    "type": "car",
-    "category": "pickup",
+    "name": "Fiat Toro",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Toro",
@@ -2480,8 +2539,9 @@ export const vehicles = [
   },
   {
     "id": 60,
-    "type": "car",
-    "category": "pickup",
+    "name": "Nissan Frontier",
+    "type": "caminhonete",
+    "category": "caminhonete",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Frontier",
@@ -2522,8 +2582,9 @@ export const vehicles = [
   },
   {
     "id": 61,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Honda CG 160",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Honda",
     "model": "CG 160",
@@ -2564,8 +2625,9 @@ export const vehicles = [
   },
   {
     "id": 62,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Honda CB 300F",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Honda",
     "model": "CB 300F",
@@ -2606,8 +2668,9 @@ export const vehicles = [
   },
   {
     "id": 63,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Honda CB 500F",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Honda",
     "model": "CB 500F",
@@ -2648,8 +2711,9 @@ export const vehicles = [
   },
   {
     "id": 64,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Honda XRE 300",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Honda",
     "model": "XRE 300",
@@ -2690,8 +2754,9 @@ export const vehicles = [
   },
   {
     "id": 65,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Honda Africa Twin",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Honda",
     "model": "Africa Twin",
@@ -2732,8 +2797,9 @@ export const vehicles = [
   },
   {
     "id": 66,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Yamaha Factor 150",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "Factor 150",
@@ -2774,8 +2840,9 @@ export const vehicles = [
   },
   {
     "id": 67,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Yamaha FZ25",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "FZ25",
@@ -2816,8 +2883,9 @@ export const vehicles = [
   },
   {
     "id": 68,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Yamaha MT-03",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "MT-03",
@@ -2858,8 +2926,9 @@ export const vehicles = [
   },
   {
     "id": 69,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Yamaha MT-07",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "MT-07",
@@ -2900,8 +2969,9 @@ export const vehicles = [
   },
   {
     "id": 70,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Yamaha YZF-R3",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "YZF-R3",
@@ -2942,8 +3012,9 @@ export const vehicles = [
   },
   {
     "id": 71,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Kawasaki Ninja 400",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Kawasaki",
     "model": "Ninja 400",
@@ -2984,8 +3055,9 @@ export const vehicles = [
   },
   {
     "id": 72,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Kawasaki Z400",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Kawasaki",
     "model": "Z400",
@@ -3026,8 +3098,9 @@ export const vehicles = [
   },
   {
     "id": 73,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "Kawasaki Ninja 650",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "Kawasaki",
     "model": "Ninja 650",
@@ -3068,8 +3141,9 @@ export const vehicles = [
   },
   {
     "id": 74,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "BMW G 310 R",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "BMW",
     "model": "G 310 R",
@@ -3110,8 +3184,9 @@ export const vehicles = [
   },
   {
     "id": 75,
-    "type": "motorcycle",
-    "category": "motorcycle",
+    "name": "BMW F 850 GS",
+    "type": "moto",
+    "category": "moto",
     "isPremium": false,
     "brand": "BMW",
     "model": "F 850 GS",
@@ -3164,16 +3239,18 @@ export const validateCatalog = () => {
   const models = {};
 
   vehicles.forEach(vehicle => {
-    if (vehicle.type === 'car') {
-      if (vehicle.category === 'pickup') {
-        counts.pickups++;
-      } else if (vehicle.isPremium) {
-        counts.luxuryCars++;
-      } else {
-        counts.normalCars++;
-      }
-    } else if (vehicle.type === 'motorcycle') {
+    const isPickup = vehicle.category === 'caminhonete' || vehicle.category === 'pickup' || vehicle.type === 'caminhonete' || vehicle.type === 'pickup';
+    const isMoto = vehicle.category === 'moto' || vehicle.category === 'motorcycle' || vehicle.type === 'moto' || vehicle.type === 'motorcycle';
+    const isCar = !isPickup && !isMoto;
+
+    if (isPickup) {
+      counts.pickups++;
+    } else if (isMoto) {
       counts.motorcycles++;
+    } else if (vehicle.isPremium) {
+      counts.luxuryCars++;
+    } else {
+      counts.normalCars++;
     }
 
     brands[vehicle.brand] = (brands[vehicle.brand] || 0) + 1;

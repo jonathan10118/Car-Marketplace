@@ -123,8 +123,8 @@ const VehicleDetailPage = () => {
 
   const getCategoryLabel = () => {
     if (!vehicle) return '';
-    if (vehicle.type === 'motorcycle') return 'Moto';
-    if (vehicle.category === 'pickup') return 'Caminhonete';
+    if (vehicle.type === 'moto' || vehicle.type === 'motorcycle' || vehicle.category === 'moto' || vehicle.category === 'motorcycle') return 'Moto';
+    if (vehicle.category === 'caminhonete' || vehicle.category === 'pickup' || vehicle.type === 'caminhonete' || vehicle.type === 'pickup') return 'Caminhonete';
     return 'Carro';
   };
 
@@ -146,8 +146,8 @@ const VehicleDetailPage = () => {
     );
   }
 
-  const mainImage = vehicle.images && vehicle.images.length > 0 
-    ? vehicle.images[0] 
+  const mainImage = vehicle.images && vehicle.images.length > 0
+    ? vehicle.images[0]
     : 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80';
 
   return (
@@ -163,12 +163,12 @@ const VehicleDetailPage = () => {
           {/* Coluna da Esquerda: Imagem Principal */}
           <div className="vehicle-image-section">
             <div className="main-image-container">
-              <img 
-                src={mainImage} 
+              <img
+                src={mainImage}
                 alt={`${vehicle.brand} ${vehicle.model}`}
                 className="main-image-element"
               />
-              <button 
+              <button
                 type="button"
                 className={`favorite-overlay-btn ${isFavorite ? 'active' : ''}`}
                 onClick={handleToggleFavorite}
@@ -182,7 +182,7 @@ const VehicleDetailPage = () => {
             <Card variant="default" padding="xl" className="detail-card description-card">
               <h3 className="section-title">Descrição do Veículo</h3>
               <p className="description-text">{vehicle.description}</p>
-              
+
               {vehicle.features && vehicle.features.length > 0 && (
                 <div className="features-list-wrapper">
                   <h4 className="features-title">Destaques e Opcionais</h4>
@@ -211,9 +211,9 @@ const VehicleDetailPage = () => {
               </div>
 
               <div className="action-buttons-group">
-                <Button 
-                  variant="primary" 
-                  size="lg" 
+                <Button
+                  variant="primary"
+                  size="lg"
                   fullWidth
                   onClick={handleInterestClick}
                   className="btn-interest-primary"
@@ -221,10 +221,10 @@ const VehicleDetailPage = () => {
                   <span className="whatsapp-icon">📱</span>
                   Tenho interesse
                 </Button>
-                
-                <Button 
-                  variant="outline" 
-                  size="lg" 
+
+                <Button
+                  variant="outline"
+                  size="lg"
                   fullWidth
                   onClick={handleToggleFavorite}
                   className="btn-favorite-secondary"
@@ -294,10 +294,10 @@ const VehicleDetailPage = () => {
                 <h4 className="contact-title">Atendimento Direto:</h4>
                 <div className="channel-item">
                   <span className="channel-icon">📱</span>
-                  <a 
-                    href="https://wa.me/5541999999999" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://wa.me/5541999999999"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="channel-link whatsapp"
                   >
                     WhatsApp: (41) 99999-9999
@@ -305,10 +305,10 @@ const VehicleDetailPage = () => {
                 </div>
                 <div className="channel-item">
                   <span className="channel-icon">📷</span>
-                  <a 
-                    href="https://instagram.com/nexus.auto" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://instagram.com/nexus.auto"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="channel-link instagram"
                   >
                     Instagram: @nexus.auto
@@ -337,16 +337,16 @@ const VehicleDetailPage = () => {
               </p>
             </div>
             <div className="modal-actions">
-              <Button 
-                variant="outline" 
-                size="md" 
+              <Button
+                variant="outline"
+                size="md"
                 onClick={() => navigate('/login', { state: { from: location.pathname } })}
               >
                 Entrar
               </Button>
-              <Button 
-                variant="primary" 
-                size="md" 
+              <Button
+                variant="primary"
+                size="md"
                 onClick={() => navigate('/register', { state: { from: location.pathname } })}
               >
                 Cadastrar
@@ -369,45 +369,45 @@ const VehicleDetailPage = () => {
                 <div className="form-grid">
                   <div className="form-field">
                     <label>Nome completo</label>
-                    <input 
-                      type="text" 
-                      name="name" 
-                      value={formData.name} 
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
                       onChange={handleFormChange}
-                      required 
+                      required
                       className="form-control"
                     />
                   </div>
                   <div className="form-field">
                     <label>CPF</label>
-                    <input 
-                      type="text" 
-                      name="cpf" 
-                      value={formData.cpf} 
+                    <input
+                      type="text"
+                      name="cpf"
+                      value={formData.cpf}
                       onChange={handleFormChange}
-                      required 
+                      required
                       className="form-control"
                     />
                   </div>
                   <div className="form-field">
                     <label>E-mail</label>
-                    <input 
-                      type="email" 
-                      name="email" 
-                      value={formData.email} 
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
                       onChange={handleFormChange}
-                      required 
+                      required
                       className="form-control"
                     />
                   </div>
                   <div className="form-field">
                     <label>Telefone</label>
-                    <input 
-                      type="tel" 
-                      name="phone" 
-                      value={formData.phone} 
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
                       onChange={handleFormChange}
-                      required 
+                      required
                       className="form-control"
                     />
                   </div>
@@ -435,7 +435,7 @@ const VehicleDetailPage = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="modal-actions">
                 <Button type="button" variant="outline" onClick={() => setShowInterestModal(false)}>
                   Cancelar

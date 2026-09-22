@@ -82,8 +82,8 @@ const VehicleCard = ({
 
   // Na interface mostrar estritamente: Carro, Caminhonete, Moto (nunca "Luxo")
   const getCategoryLabel = () => {
-    if (type === 'motorcycle') return 'Moto';
-    if (category === 'pickup') return 'Caminhonete';
+    if (type === 'moto' || type === 'motorcycle' || category === 'moto' || category === 'motorcycle') return 'Moto';
+    if (category === 'caminhonete' || category === 'pickup' || type === 'caminhonete' || type === 'pickup') return 'Caminhonete';
     return 'Carro';
   };
 
