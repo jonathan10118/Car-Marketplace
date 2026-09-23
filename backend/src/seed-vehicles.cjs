@@ -5,7 +5,7 @@ const mysql = require('mysql2/promise');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const ENV_FILE = path.join(ROOT, 'backend', '.env');
-const VEHICLES_FILE = path.join(ROOT, 'src', 'mocks', 'vehicles.js');
+const VEHICLES_FILE = path.join(ROOT, 'src', 'mocks', 'vehicles.local.js');
 
 if (typeof loadEnvFile === 'function') {
   loadEnvFile(ENV_FILE);
