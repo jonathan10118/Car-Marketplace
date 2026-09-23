@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+backend/.env
+fix_nexus_images.cjs
+public/vehicles/
+src/mocks/vehicles-backup-*.js
+
+.env
+src/mocks/vehicles-backup.js
