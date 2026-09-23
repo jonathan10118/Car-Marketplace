@@ -3,8 +3,8 @@ export const vehicles = [
   {
     "id": 1,
     "name": "Porsche 911 Carrera",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Porsche",
     "model": "911 Carrera",
@@ -17,9 +17,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Porsche 911 Carrera 3.0 Twin-Turbo PDK 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80",
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
-      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Cinza Agata",
@@ -46,8 +44,8 @@ export const vehicles = [
   {
     "id": 2,
     "name": "Porsche Macan GTS",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Macan GTS",
@@ -60,9 +58,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Porsche Macan GTS 2.9 V6 Biturbo 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80"
+      "https://images.unsplash.com/photo-1603584173870-7b299f58938b?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Preto Vulcano",
@@ -89,8 +85,8 @@ export const vehicles = [
   {
     "id": 3,
     "name": "Porsche Cayenne Coupé",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Cayenne Coupé",
@@ -103,9 +99,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Porsche Cayenne Coupé 3.0 V6 Turbo E-Hybrid 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Ponta Grossa.",
     "images": [
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Branco Carrara",
@@ -132,8 +126,8 @@ export const vehicles = [
   {
     "id": 4,
     "name": "Porsche Panamera 4S",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Panamera 4S",
@@ -146,9 +140,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Porsche Panamera 4S 2.9 V6 E-Hybrid 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Florianópolis.",
     "images": [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
-      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80",
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Azul Gentian",
@@ -175,8 +167,8 @@ export const vehicles = [
   {
     "id": 5,
     "name": "Porsche Taycan 4S",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Porsche",
     "model": "Taycan 4S",
@@ -189,9 +181,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Porsche Taycan 4S Elétrico 530cv 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Joinville.",
     "images": [
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
+      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80"
     ],
     "fuel": "Elétrico",
     "color": "Cinza Vulcano",
@@ -218,8 +208,8 @@ export const vehicles = [
   {
     "id": 6,
     "name": "Mercedes-Benz Classe C C300",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "Classe C C300",
@@ -232,9 +222,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Mercedes-Benz Classe C C300 AMG Line 2.0 Turbo 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Blumenau.",
     "images": [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Prata High-Tech",
@@ -261,8 +249,8 @@ export const vehicles = [
   {
     "id": 7,
     "name": "Mercedes-Benz Classe E E350",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "Classe E E350",
@@ -275,9 +263,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Mercedes-Benz Classe E E350 Exclusive 2.0 Turbo 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Porto Alegre.",
     "images": [
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Preto Obsidiana",
@@ -304,8 +290,8 @@ export const vehicles = [
   {
     "id": 8,
     "name": "Mercedes-Benz Classe S S500",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "Classe S S500",
@@ -318,9 +304,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Mercedes-Benz Classe S S500 4MATIC Longo 3.0 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Caxias do Sul.",
     "images": [
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80"
+      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Preto Ônix",
@@ -347,8 +331,8 @@ export const vehicles = [
   {
     "id": 9,
     "name": "Mercedes-Benz GLC 300",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "GLC 300",
@@ -361,9 +345,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Mercedes-Benz GLC 300 4MATIC Coupe AMG Line 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Canoas.",
     "images": [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
-      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80",
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=800&q=80"
+      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Cinza Selenita",
@@ -390,8 +372,8 @@ export const vehicles = [
   {
     "id": 10,
     "name": "Mercedes-Benz GLE 450",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Mercedes-Benz",
     "model": "GLE 450",
@@ -404,9 +386,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Mercedes-Benz GLE 450 4MATIC 3.0 Turbo 7 Lugares 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
+      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Azul Cavansite",
@@ -433,8 +413,8 @@ export const vehicles = [
   {
     "id": 11,
     "name": "BMW Série 3 330i",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "BMW",
     "model": "Série 3 330i",
@@ -447,9 +427,7 @@ export const vehicles = [
     "state": "PR",
     "description": "BMW Série 3 330i M Sport 2.0 Turbo 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Azul Portimão",
@@ -476,8 +454,8 @@ export const vehicles = [
   {
     "id": 12,
     "name": "BMW Série 5 530i",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "BMW",
     "model": "Série 5 530i",
@@ -490,9 +468,7 @@ export const vehicles = [
     "state": "PR",
     "description": "BMW Série 5 530i M Sport 2.0 Turbo 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Ponta Grossa.",
     "images": [
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Preto Carbono",
@@ -519,8 +495,8 @@ export const vehicles = [
   {
     "id": 13,
     "name": "BMW Série 7 740i",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "BMW",
     "model": "Série 7 740i",
@@ -533,9 +509,7 @@ export const vehicles = [
     "state": "SC",
     "description": "BMW Série 7 740i Pure Excellence 3.0 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Florianópolis.",
     "images": [
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80"
+      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Cinza Dravit",
@@ -562,8 +536,8 @@ export const vehicles = [
   {
     "id": 14,
     "name": "BMW X3 xDrive30i",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "BMW",
     "model": "X3 xDrive30i",
@@ -576,9 +550,7 @@ export const vehicles = [
     "state": "SC",
     "description": "BMW X3 xDrive30i M Sport 2.0 Turbo 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Joinville.",
     "images": [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
-      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80",
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=800&q=80"
+      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Branco Alpino",
@@ -605,8 +577,8 @@ export const vehicles = [
   {
     "id": 15,
     "name": "BMW X5 xDrive50e",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "BMW",
     "model": "X5 xDrive50e",
@@ -619,9 +591,7 @@ export const vehicles = [
     "state": "SC",
     "description": "BMW X5 xDrive50e M Sport Plug-in Hybrid 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Blumenau.",
     "images": [
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
+      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Azul Phytonic",
@@ -648,8 +618,8 @@ export const vehicles = [
   {
     "id": 16,
     "name": "Audi A4 Sedan",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Audi",
     "model": "A4 Sedan",
@@ -662,9 +632,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Audi A4 Sedan Performance Black 2.0 TFSI 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Porto Alegre.",
     "images": [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Cinza Daytona",
@@ -691,8 +659,8 @@ export const vehicles = [
   {
     "id": 17,
     "name": "Audi A6 Sedan",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Audi",
     "model": "A6 Sedan",
@@ -705,9 +673,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Audi A6 Sedan Performance 2.0 TFSI 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Caxias do Sul.",
     "images": [
-      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Preto Mito",
@@ -734,8 +700,8 @@ export const vehicles = [
   {
     "id": 18,
     "name": "Audi A8 L",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Audi",
     "model": "A8 L",
@@ -748,9 +714,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Audi A8 L Performance Black 3.0 TFSI 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Canoas.",
     "images": [
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&q=80"
+      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Prata Florete",
@@ -777,8 +741,8 @@ export const vehicles = [
   {
     "id": 19,
     "name": "Audi Q5 SUV",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Audi",
     "model": "Q5 SUV",
@@ -791,9 +755,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Audi Q5 SUV Performance Black TFSIe Hybrid 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80",
-      "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=800&q=80",
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=800&q=80"
+      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Branco Geleira",
@@ -820,8 +782,8 @@ export const vehicles = [
   {
     "id": 20,
     "name": "Audi Q7 SUV",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": true,
     "brand": "Audi",
     "model": "Q7 SUV",
@@ -834,9 +796,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Audi Q7 SUV S line 3.0 TFSI 7 Lugares 0km. Veículo premium novo, pronta entrega com garantia de fábrica na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
+      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Azul Navarra",
@@ -863,8 +823,8 @@ export const vehicles = [
   {
     "id": 21,
     "name": "Volkswagen Gol",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Gol",
@@ -877,9 +837,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Volkswagen Gol 1.0 MPI 12V TotalFlex 0km. Zero km disponível na loja Nexus Auto de Curitiba, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Branco Cristal",
@@ -906,8 +864,8 @@ export const vehicles = [
   {
     "id": 22,
     "name": "Volkswagen Polo",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Polo",
@@ -920,9 +878,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Volkswagen Polo Comfortline 170 TSI Automático 0km. Zero km disponível na loja Nexus Auto de Londrina, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=80",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-      "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Cinza Platinum",
@@ -949,8 +905,8 @@ export const vehicles = [
   {
     "id": 23,
     "name": "Volkswagen Nivus",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Nivus",
@@ -963,9 +919,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Volkswagen Nivus Highline 200 TSI Automático 0km. Zero km disponível na loja Nexus Auto de Ponta Grossa, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Azul Biscay",
@@ -992,8 +946,8 @@ export const vehicles = [
   {
     "id": 24,
     "name": "Volkswagen T-Cross",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "T-Cross",
@@ -1006,9 +960,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Volkswagen T-Cross Highline 250 TSI Automático 0km. Zero km disponível na loja Nexus Auto de Florianópolis, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Prata Pyrit",
@@ -1035,8 +987,8 @@ export const vehicles = [
   {
     "id": 25,
     "name": "Volkswagen Virtus",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Virtus",
@@ -1049,9 +1001,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Volkswagen Virtus Exclusive 250 TSI Automático 0km. Zero km disponível na loja Nexus Auto de Joinville, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Preto Ninja",
@@ -1078,8 +1028,8 @@ export const vehicles = [
   {
     "id": 26,
     "name": "Chevrolet Onix",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Onix",
@@ -1092,9 +1042,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Chevrolet Onix Premier 1.0 Turbo Automático 0km. Zero km disponível na loja Nexus Auto de Blumenau, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Vermelho Carmim",
@@ -1121,8 +1069,8 @@ export const vehicles = [
   {
     "id": 27,
     "name": "Chevrolet Onix Plus",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Onix Plus",
@@ -1135,9 +1083,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Chevrolet Onix Plus Premier 1.0 Turbo Automático 0km. Zero km disponível na loja Nexus Auto de Porto Alegre, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=80",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-      "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Prata Shark",
@@ -1164,8 +1110,8 @@ export const vehicles = [
   {
     "id": 28,
     "name": "Chevrolet Tracker",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Tracker",
@@ -1178,9 +1124,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Chevrolet Tracker Premier 1.2 Turbo Automático 0km. Zero km disponível na loja Nexus Auto de Caxias do Sul, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Azul Eclipse",
@@ -1207,8 +1151,8 @@ export const vehicles = [
   {
     "id": 29,
     "name": "Chevrolet Cruze",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Cruze",
@@ -1221,9 +1165,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Chevrolet Cruze LTZ 1.4 Turbo Automático 0km. Zero km disponível na loja Nexus Auto de Canoas, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Branco Abalone",
@@ -1250,8 +1192,8 @@ export const vehicles = [
   {
     "id": 30,
     "name": "Chevrolet Spin",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Spin",
@@ -1264,9 +1206,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Chevrolet Spin Premier 1.8 7 Lugares Automático 0km. Zero km disponível na loja Nexus Auto de Curitiba, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Cinza Drake",
@@ -1293,8 +1233,8 @@ export const vehicles = [
   {
     "id": 31,
     "name": "Ford Ka",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Ford",
     "model": "Ka",
@@ -1307,9 +1247,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Ford Ka Titanium 1.5 AT 0km. Zero km disponível na loja Nexus Auto de Londrina, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Branco Ártico",
@@ -1336,8 +1274,8 @@ export const vehicles = [
   {
     "id": 32,
     "name": "Ford Fiesta",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Ford",
     "model": "Fiesta",
@@ -1350,9 +1288,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Ford Fiesta Titanium 1.6 Flex AT 0km. Zero km disponível na loja Nexus Auto de Ponta Grossa, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=80",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-      "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Vermelho Bari",
@@ -1379,8 +1315,8 @@ export const vehicles = [
   {
     "id": 33,
     "name": "Ford Focus",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Ford",
     "model": "Focus",
@@ -1393,9 +1329,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Ford Focus Fastback Titanium Plus 2.0 AT 0km. Zero km disponível na loja Nexus Auto de Florianópolis, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Prata Dublin",
@@ -1422,8 +1356,8 @@ export const vehicles = [
   {
     "id": 34,
     "name": "Ford Territory",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Ford",
     "model": "Territory",
@@ -1436,9 +1370,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Ford Territory Titanium 1.5 Turbo EcoBoost 0km. Zero km disponível na loja Nexus Auto de Joinville, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Azul Noronha",
@@ -1465,8 +1397,8 @@ export const vehicles = [
   {
     "id": 35,
     "name": "Toyota Corolla",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Corolla",
@@ -1479,9 +1411,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Toyota Corolla Altis Premium 2.0 Dynamic Force Flex 0km. Zero km disponível na loja Nexus Auto de Blumenau, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Branco Pérola",
@@ -1508,8 +1438,8 @@ export const vehicles = [
   {
     "id": 36,
     "name": "Toyota Yaris",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Yaris",
@@ -1522,9 +1452,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Toyota Yaris XLS 1.5 Flex Automático 0km. Zero km disponível na loja Nexus Auto de Porto Alegre, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Cinza Granito",
@@ -1551,8 +1479,8 @@ export const vehicles = [
   {
     "id": 37,
     "name": "Toyota Corolla Cross",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Corolla Cross",
@@ -1565,9 +1493,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Toyota Corolla Cross XRX Hybrid 1.8 Flex 0km. Zero km disponível na loja Nexus Auto de Caxias do Sul, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=80",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-      "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Prata Lua Nova",
@@ -1594,8 +1520,8 @@ export const vehicles = [
   {
     "id": 38,
     "name": "Honda Civic",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Honda",
     "model": "Civic",
@@ -1608,9 +1534,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Honda Civic Touring 2.0 e:HEV Híbrido 0km. Zero km disponível na loja Nexus Auto de Canoas, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Híbrido",
     "color": "Preto Cristal",
@@ -1637,8 +1561,8 @@ export const vehicles = [
   {
     "id": 39,
     "name": "Honda City",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Honda",
     "model": "City",
@@ -1651,9 +1575,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Honda City Touring 1.5 DOHC i-VTEC Flex 0km. Zero km disponível na loja Nexus Auto de Curitiba, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Azul Cósmico",
@@ -1680,8 +1602,8 @@ export const vehicles = [
   {
     "id": 40,
     "name": "Honda HR-V",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Honda",
     "model": "HR-V",
@@ -1694,9 +1616,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Honda HR-V Touring 1.5 Turbo Flex 0km. Zero km disponível na loja Nexus Auto de Londrina, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Branco Topázio",
@@ -1723,8 +1643,8 @@ export const vehicles = [
   {
     "id": 41,
     "name": "Fiat Mobi",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Mobi",
@@ -1737,9 +1657,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Fiat Mobi Trekking 1.0 Fire Flex 0km. Zero km disponível na loja Nexus Auto de Ponta Grossa, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Cinza Strato",
@@ -1766,8 +1684,8 @@ export const vehicles = [
   {
     "id": 42,
     "name": "Fiat Argo",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Argo",
@@ -1780,9 +1698,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Fiat Argo Trekking 1.3 Flex Automático 0km. Zero km disponível na loja Nexus Auto de Florianópolis, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=80",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-      "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Laranja Salento",
@@ -1809,8 +1725,8 @@ export const vehicles = [
   {
     "id": 43,
     "name": "Fiat Pulse",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Pulse",
@@ -1823,9 +1739,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Fiat Pulse Impetus 1.0 Turbo 200 Flex AT 0km. Zero km disponível na loja Nexus Auto de Joinville, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Cinza Silverstone",
@@ -1852,8 +1766,8 @@ export const vehicles = [
   {
     "id": 44,
     "name": "Fiat Fastback",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Fastback",
@@ -1866,9 +1780,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Fiat Fastback Limited Edition Powered by Abarth 0km. Zero km disponível na loja Nexus Auto de Blumenau, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Branco Banchisa",
@@ -1895,8 +1807,8 @@ export const vehicles = [
   {
     "id": 45,
     "name": "Nissan Kicks",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Kicks",
@@ -1909,9 +1821,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Nissan Kicks Exclusive 1.6 Flex CVT 0km. Zero km disponível na loja Nexus Auto de Porto Alegre, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Azul Elétrico",
@@ -1938,8 +1848,8 @@ export const vehicles = [
   {
     "id": 46,
     "name": "Nissan Versa",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Versa",
@@ -1952,9 +1862,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Nissan Versa Exclusive 1.6 16V Flex CVT 0km. Zero km disponível na loja Nexus Auto de Caxias do Sul, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
-      "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Prata Classic",
@@ -1981,8 +1889,8 @@ export const vehicles = [
   {
     "id": 47,
     "name": "Nissan Sentra",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Sentra",
@@ -1995,9 +1903,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Nissan Sentra Exclusive 2.0 CVT com Teto 0km. Zero km disponível na loja Nexus Auto de Canoas, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=80",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-      "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Cinza Grafite",
@@ -2024,8 +1930,8 @@ export const vehicles = [
   {
     "id": 48,
     "name": "Renault Kwid",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Renault",
     "model": "Kwid",
@@ -2038,9 +1944,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Renault Kwid Outsider 1.0 12V SCe Flex 0km. Zero km disponível na loja Nexus Auto de Curitiba, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Verde Noronha",
@@ -2067,8 +1971,8 @@ export const vehicles = [
   {
     "id": 49,
     "name": "Renault Duster",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Renault",
     "model": "Duster",
@@ -2081,9 +1985,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Renault Duster Iconic Plus 1.3 TCe Turbo CVT 0km. Zero km disponível na loja Nexus Auto de Londrina, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80",
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
-      "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Laranja Atacama",
@@ -2110,8 +2012,8 @@ export const vehicles = [
   {
     "id": 50,
     "name": "Renault Kardian",
-    "type": "carro",
-    "category": "carro",
+    "type": "car",
+    "category": "car",
     "isPremium": false,
     "brand": "Renault",
     "model": "Kardian",
@@ -2124,9 +2026,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Renault Kardian Premiere Edition 1.0 Turbo EDC 0km. Zero km disponível na loja Nexus Auto de Ponta Grossa, revisado e com procedência total.",
     "images": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800&q=80",
-      "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80"
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Laranja Energie",
@@ -2153,8 +2053,8 @@ export const vehicles = [
   {
     "id": 51,
     "name": "Volkswagen Amarok",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Volkswagen",
     "model": "Amarok",
@@ -2167,9 +2067,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Volkswagen Amarok Extreme 3.0 V6 TDI 4x4 Diesel 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1519245659620-e859806a8d3b?w=800&q=80"
+      "https://images.unsplash.com/photo-1568416795728-4d9b4e92d97f?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Cinza Indium",
@@ -2196,8 +2094,8 @@ export const vehicles = [
   {
     "id": 52,
     "name": "Chevrolet Montana",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "Montana",
@@ -2210,9 +2108,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Chevrolet Montana RS 1.2 Turbo Flex Automática 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=80"
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Vermelho Chili",
@@ -2239,8 +2135,8 @@ export const vehicles = [
   {
     "id": 53,
     "name": "Chevrolet S10",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "S10",
@@ -2253,9 +2149,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Chevrolet S10 High Country 2.8 Turbo 4x4 Diesel AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Ponta Grossa.",
     "images": [
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80"
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Branco Summit",
@@ -2282,8 +2176,8 @@ export const vehicles = [
   {
     "id": 54,
     "name": "Chevrolet D20",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "D20",
@@ -2296,9 +2190,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Chevrolet D20 Custom De Luxe 4.0 Diesel 4x4 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Florianópolis.",
     "images": [
-      "https://images.unsplash.com/photo-1612825173281-9a193378527e?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1551830820-330a71b99659?w=800&q=80"
+      "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Vinho Clássico",
@@ -2325,8 +2217,8 @@ export const vehicles = [
   {
     "id": 55,
     "name": "Chevrolet 250",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Chevrolet",
     "model": "250",
@@ -2339,9 +2231,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Chevrolet 250 Heavy Duty 4.2 Diesel Turbo Cabine Dupla 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Joinville.",
     "images": [
-      "https://images.unsplash.com/photo-1570733577524-3a047079e80d?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80"
+      "https://images.unsplash.com/photo-1570733577524-3a047079e80d?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Prata Lunar",
@@ -2368,8 +2258,8 @@ export const vehicles = [
   {
     "id": 56,
     "name": "Ford Ranger",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Ford",
     "model": "Ranger",
@@ -2382,9 +2272,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Ford Ranger Limited 3.0 V6 4WD Diesel AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Blumenau.",
     "images": [
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1519245659620-e859806a8d3b?w=800&q=80"
+      "https://images.unsplash.com/photo-1568416795728-4d9b4e92d97f?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Laranja Terra",
@@ -2411,8 +2299,8 @@ export const vehicles = [
   {
     "id": 57,
     "name": "Toyota Hilux",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Toyota",
     "model": "Hilux",
@@ -2425,9 +2313,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Toyota Hilux GR-Sport 2.8 TDI 4x4 Diesel Automática 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Porto Alegre.",
     "images": [
-      "https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=80"
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Preto Mica",
@@ -2454,8 +2340,8 @@ export const vehicles = [
   {
     "id": 58,
     "name": "Mitsubishi Triton",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Mitsubishi",
     "model": "Triton",
@@ -2468,9 +2354,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Mitsubishi Triton HPE-S 2.4 Turbo Diesel 4x4 AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Caxias do Sul.",
     "images": [
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80"
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Branco Fuji",
@@ -2497,8 +2381,8 @@ export const vehicles = [
   {
     "id": 59,
     "name": "Fiat Toro",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Fiat",
     "model": "Toro",
@@ -2511,9 +2395,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Fiat Toro Ultra 2.0 16V Turbo Diesel 4x4 AT9 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Canoas.",
     "images": [
-      "https://images.unsplash.com/photo-1612825173281-9a193378527e?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1551830820-330a71b99659?w=800&q=80"
+      "https://images.unsplash.com/photo-1612825173281-9a193378527e?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Cinza Sting",
@@ -2540,8 +2422,8 @@ export const vehicles = [
   {
     "id": 60,
     "name": "Nissan Frontier",
-    "type": "caminhonete",
-    "category": "caminhonete",
+    "type": "pickup",
+    "category": "pickup",
     "isPremium": false,
     "brand": "Nissan",
     "model": "Frontier",
@@ -2554,9 +2436,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Nissan Frontier PRO-4X 2.3 Biturbo 4x4 Diesel AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1570733577524-3a047079e80d?w=800&q=80",
-      "https://images.unsplash.com/photo-1566008885218-90abf9200ddb?w=800&q=80",
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80"
+      "https://images.unsplash.com/photo-1570733577524-3a047079e80d?w=800&q=80"
     ],
     "fuel": "Diesel",
     "color": "Cinza Shark",
@@ -2583,8 +2463,8 @@ export const vehicles = [
   {
     "id": 61,
     "name": "Honda CG 160",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Honda",
     "model": "CG 160",
@@ -2597,9 +2477,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Honda CG 160 Titan FlexOne 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981033-0f0309284409?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Vermelho Perolizado",
@@ -2626,8 +2504,8 @@ export const vehicles = [
   {
     "id": 62,
     "name": "Honda CB 300F",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Honda",
     "model": "CB 300F",
@@ -2640,9 +2518,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Honda CB 300F Twister ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80",
-      "https://images.unsplash.com/photo-1622185135505-2d795003994a?w=800&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Azul Metálico",
@@ -2669,8 +2545,8 @@ export const vehicles = [
   {
     "id": 63,
     "name": "Honda CB 500F",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Honda",
     "model": "CB 500F",
@@ -2683,9 +2559,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Honda CB 500F ABS Bicilíndrica 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Ponta Grossa.",
     "images": [
-      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80",
-      "https://images.unsplash.com/photo-1571188654248-7a89213915f7?w=800&q=80"
+      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Prata Fosco",
@@ -2712,8 +2586,8 @@ export const vehicles = [
   {
     "id": 64,
     "name": "Honda XRE 300",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Honda",
     "model": "XRE 300",
@@ -2726,9 +2600,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Honda XRE 300 Sahara Rally ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Florianópolis.",
     "images": [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1622185135505-2d795003994a?w=800&q=80",
-      "https://images.unsplash.com/photo-1558980664-3a031cf67ea8?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Vermelho Rally",
@@ -2755,8 +2627,8 @@ export const vehicles = [
   {
     "id": 65,
     "name": "Honda Africa Twin",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Honda",
     "model": "Africa Twin",
@@ -2769,9 +2641,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Honda Africa Twin CRF 1100L DCT Adventure Sports 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Joinville.",
     "images": [
-      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80",
-      "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?w=800&q=80",
-      "https://images.unsplash.com/photo-1558980664-2506fca6bfc2?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Branco Tricolor",
@@ -2798,8 +2668,8 @@ export const vehicles = [
   {
     "id": 66,
     "name": "Yamaha Factor 150",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "Factor 150",
@@ -2812,9 +2682,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Yamaha Factor 150 ED UBS Flex 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Blumenau.",
     "images": [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981033-0f0309284409?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Preto Eclipse",
@@ -2841,8 +2709,8 @@ export const vehicles = [
   {
     "id": 67,
     "name": "Yamaha FZ25",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "FZ25",
@@ -2855,9 +2723,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Yamaha FZ25 Fazer 250 ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Porto Alegre.",
     "images": [
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80",
-      "https://images.unsplash.com/photo-1622185135505-2d795003994a?w=800&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80"
     ],
     "fuel": "Flex",
     "color": "Azul Racing Blue",
@@ -2884,8 +2750,8 @@ export const vehicles = [
   {
     "id": 68,
     "name": "Yamaha MT-03",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "MT-03",
@@ -2898,9 +2764,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Yamaha MT-03 ABS Bicilíndrica 321cc 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Caxias do Sul.",
     "images": [
-      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80",
-      "https://images.unsplash.com/photo-1571188654248-7a89213915f7?w=800&q=80"
+      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Storm Fluo",
@@ -2927,8 +2791,8 @@ export const vehicles = [
   {
     "id": 69,
     "name": "Yamaha MT-07",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "MT-07",
@@ -2941,9 +2805,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Yamaha MT-07 ABS 689cc 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Canoas.",
     "images": [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1622185135505-2d795003994a?w=800&q=80",
-      "https://images.unsplash.com/photo-1558980664-3a031cf67ea8?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Cyan Storm",
@@ -2970,8 +2832,8 @@ export const vehicles = [
   {
     "id": 70,
     "name": "Yamaha YZF-R3",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Yamaha",
     "model": "YZF-R3",
@@ -2984,9 +2846,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Yamaha YZF-R3 Monster Energy MotoGP Edition 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80",
-      "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?w=800&q=80",
-      "https://images.unsplash.com/photo-1558980664-2506fca6bfc2?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Preto Monster",
@@ -3013,8 +2873,8 @@ export const vehicles = [
   {
     "id": 71,
     "name": "Kawasaki Ninja 400",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Kawasaki",
     "model": "Ninja 400",
@@ -3027,9 +2887,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Kawasaki Ninja 400 KRT Edition ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981033-0f0309284409?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Verde Lime Green",
@@ -3056,8 +2914,8 @@ export const vehicles = [
   {
     "id": 72,
     "name": "Kawasaki Z400",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Kawasaki",
     "model": "Z400",
@@ -3070,9 +2928,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Kawasaki Z400 Special Edition ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Ponta Grossa.",
     "images": [
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80",
-      "https://images.unsplash.com/photo-1622185135505-2d795003994a?w=800&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Cinza Candy",
@@ -3099,8 +2955,8 @@ export const vehicles = [
   {
     "id": 73,
     "name": "Kawasaki Ninja 650",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "Kawasaki",
     "model": "Ninja 650",
@@ -3113,9 +2969,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Kawasaki Ninja 650 ABS Sport Touring 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Florianópolis.",
     "images": [
-      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80",
-      "https://images.unsplash.com/photo-1571188654248-7a89213915f7?w=800&q=80"
+      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Verde Metálico",
@@ -3142,8 +2996,8 @@ export const vehicles = [
   {
     "id": 74,
     "name": "BMW G 310 R",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "BMW",
     "model": "G 310 R",
@@ -3156,9 +3010,7 @@ export const vehicles = [
     "state": "SC",
     "description": "BMW G 310 R Sport ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Joinville.",
     "images": [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1622185135505-2d795003994a?w=800&q=80",
-      "https://images.unsplash.com/photo-1558980664-3a031cf67ea8?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Vermelho Racing",
@@ -3185,8 +3037,8 @@ export const vehicles = [
   {
     "id": 75,
     "name": "BMW F 850 GS",
-    "type": "moto",
-    "category": "moto",
+    "type": "motorcycle",
+    "category": "motorcycle",
     "isPremium": false,
     "brand": "BMW",
     "model": "F 850 GS",
@@ -3199,9 +3051,7 @@ export const vehicles = [
     "state": "SC",
     "description": "BMW F 850 GS Premium Adventure Triple Black 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Blumenau.",
     "images": [
-      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80",
-      "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?w=800&q=80",
-      "https://images.unsplash.com/photo-1558980664-2506fca6bfc2?w=800&q=80"
+      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80"
     ],
     "fuel": "Gasolina",
     "color": "Preto Triple Black",
