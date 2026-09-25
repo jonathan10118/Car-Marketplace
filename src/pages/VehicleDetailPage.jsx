@@ -128,6 +128,14 @@ const VehicleDetailPage = () => {
     return 'Carro';
   };
 
+  const handleGoBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate('/vehicles');
+    }
+  };
+
   if (!vehicle) {
     return (
       <div className="vehicle-detail-page">
@@ -154,9 +162,15 @@ const VehicleDetailPage = () => {
     <div className="vehicle-detail-page">
       <div className="container">
         <div className="detail-navigation">
-          <Link to="/vehicles" className="back-link">
+          <button
+            type="button"
+            className="back-link"
+            onClick={handleGoBack}
+            aria-label="Voltar ao catálogo"
+            title="Voltar ao catálogo"
+          >
             ←
-          </Link>
+          </button>
         </div>
 
         <div className="vehicle-detail-content">

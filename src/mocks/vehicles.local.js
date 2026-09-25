@@ -2067,7 +2067,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Volkswagen Amarok Extreme 3.0 V6 TDI 4x4 Diesel 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1568416795728-4d9b4e92d97f?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen%20Amarok%20V6%20Extreme%204Motion%202021.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Cinza Indium",
@@ -2108,7 +2108,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Chevrolet Montana RS 1.2 Turbo Flex Automática 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Chevrolet%20Montana%20LTZ%20front.jpg?width=1000"
     ],
     "fuel": "Flex",
     "color": "Vermelho Chili",
@@ -2149,7 +2149,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Chevrolet S10 High Country 2.8 Turbo 4x4 Diesel AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Ponta Grossa.",
     "images": [
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2024%20Chevrolet%20Colorado%20High%20Country%20(Chile)%20front%20view.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Branco Summit",
@@ -2190,7 +2190,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Chevrolet D20 Custom De Luxe 4.0 Diesel 4x4 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Florianópolis.",
     "images": [
-      "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet%20D-20%20Conquest%2001.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Vinho Clássico",
@@ -2231,7 +2231,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Chevrolet 250 Heavy Duty 4.2 Diesel Turbo Cabine Dupla 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Joinville.",
     "images": [
-      "https://images.unsplash.com/photo-1570733577524-3a047079e80d?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet%20GMTT1XX%20Silverado%202500%20Heavy%20Duty%20Crew%20Cab.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Prata Lunar",
@@ -2272,7 +2272,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Ford Ranger Limited 3.0 V6 4WD Diesel AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Blumenau.",
     "images": [
-      "https://images.unsplash.com/photo-1568416795728-4d9b4e92d97f?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2024%20Ford%20Ranger%20V6%20Limited%20(Argentina)%2C%20side.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Laranja Terra",
@@ -2313,7 +2313,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Toyota Hilux GR-Sport 2.8 TDI 4x4 Diesel Automática 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Porto Alegre.",
     "images": [
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota%20HiLux%20GR%20Sport%201X7A7281.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Preto Mica",
@@ -2354,7 +2354,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Mitsubishi Triton HPE-S 2.4 Turbo Diesel 4x4 AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Caxias do Sul.",
     "images": [
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mitsubishi%20Triton%202.4%20Athlete%204WD%20White%20Diamond%20-%20front.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Branco Fuji",
@@ -2395,7 +2395,7 @@ export const vehicles = [
     "state": "RS",
     "description": "Fiat Toro Ultra 2.0 16V Turbo Diesel 4x4 AT9 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Canoas.",
     "images": [
-      "https://images.unsplash.com/photo-1612825173281-9a193378527e?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2020%20Fiat%20Toro%20Ultra.jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Cinza Sting",
@@ -2436,7 +2436,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Nissan Frontier PRO-4X 2.3 Biturbo 4x4 Diesel AT 0km. Caminhonete nova com máxima robustez e capacidade, pronta para entrega na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1570733577524-3a047079e80d?w=800&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Nissan%20Frontier%202.3%20Pro%204X%20(Argentina).jpg?width=1000"
     ],
     "fuel": "Diesel",
     "color": "Cinza Shark",
@@ -2846,7 +2846,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Yamaha YZF-R3 Monster Energy MotoGP Edition 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Curitiba.",
     "images": [
-      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80"
+      "https://images.usadosbr.com/media/gallery/5b/2a/9a/yamaha-yzf-r3-321-monster-energy-moto-gp-edition-1428427867-2024-belem-pa-2b5da121-Gw--3.webp"
     ],
     "fuel": "Gasolina",
     "color": "Preto Monster",
@@ -2887,7 +2887,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Kawasaki Ninja 400 KRT Edition ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Londrina.",
     "images": [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80"
+      "https://www.chavesnamao.com.br/imn/0600x0400/A/veiculos/21481/8980372/kawasaki-ninja-em-curitiba-pr-544f547a.jpg"
     ],
     "fuel": "Gasolina",
     "color": "Verde Lime Green",
@@ -2928,7 +2928,7 @@ export const vehicles = [
     "state": "PR",
     "description": "Kawasaki Z400 Special Edition ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Ponta Grossa.",
     "images": [
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80"
+      "https://kawasaki.m3parts.com.br/arquivos/1705005885_24er400f_540bk1dls3cg_a.jpg"
     ],
     "fuel": "Gasolina",
     "color": "Cinza Candy",
@@ -2969,7 +2969,7 @@ export const vehicles = [
     "state": "SC",
     "description": "Kawasaki Ninja 650 ABS Sport Touring 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Florianópolis.",
     "images": [
-      "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80"
+      "https://mastermotosport.com/wp-content/uploads/2026/04/IMG_1721-scaled.jpeg"
     ],
     "fuel": "Gasolina",
     "color": "Verde Metálico",
@@ -3010,7 +3010,7 @@ export const vehicles = [
     "state": "SC",
     "description": "BMW G 310 R Sport ABS 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Joinville.",
     "images": [
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80"
+      "https://starnewsmotos.com.br/wp-content/uploads/2024/06/BMW_G310R_RacingRed.jpg"
     ],
     "fuel": "Gasolina",
     "color": "Vermelho Racing",
@@ -3051,7 +3051,7 @@ export const vehicles = [
     "state": "SC",
     "description": "BMW F 850 GS Premium Adventure Triple Black 0km. Moto zero km, pronta para rodar com eficiência e segurança na Nexus Auto Blumenau.",
     "images": [
-      "https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLq6AtP0e34zSbcVd6B_tE5dfvpLYRDv1Y3wMTWEuHqwW0FVnoIAPFAmyd&s=10"
     ],
     "fuel": "Gasolina",
     "color": "Preto Triple Black",

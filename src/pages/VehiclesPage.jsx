@@ -9,20 +9,77 @@ import './VehiclesPage.css';
 
 const VehiclesPage = () => {
   const [searchParams] = useSearchParams();
-  const [searchTerm, setSearchTerm] = useState('');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [filters, setFilters] = useState({
-    vehicleType: 'all',
-    state: 'all',
-    city: 'all'
+
+  // Recupera ou inicializa termo de busca do sessionStorage ou URL
+  const [searchTerm, setSearchTerm] = useState(() => {
+    const searchParam = searchParams.get('search');
+    if (searchParam !== null && searchParam !== '') return searchParam;
+    return sessionStorage.getItem('nexus_catalog_search') || '';
   });
 
+  // Recupera ou inicializa filtros do sessionStorage
+  const [filters, setFilters] = useState(() => {
+    try {
+      const saved = sessionStorage.getItem('nexus_catalog_filters');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        return {
+          vehicleType: parsed.vehicleType || 'all',
+          state: parsed.state || 'all',
+          city: parsed.city || 'all'
+        };
+      }
+    } catch {
+      // Ignora erro de parse
+    }
+    return {
+      vehicleType: 'all',
+      state: 'all',
+      city: 'all'
+    };
+  });
+
+  // Atualiza termo se query param mudar
   useEffect(() => {
     const searchParam = searchParams.get('search');
-    if (searchParam) {
+    if (searchParam !== null) {
       setSearchTerm(searchParam);
+      sessionStorage.setItem('nexus_catalog_search', searchParam);
     }
   }, [searchParams]);
+
+  // Persiste filtros e busca no sessionStorage
+  useEffect(() => {
+    sessionStorage.setItem('nexus_catalog_filters', JSON.stringify(filters));
+  }, [filters]);
+
+  useEffect(() => {
+    sessionStorage.setItem('nexus_catalog_search', searchTerm);
+  }, [searchTerm]);
+
+  // Restaura e monitora scroll da página
+  useEffect(() => {
+    const savedScroll = sessionStorage.getItem('nexus_catalog_scroll');
+    if (savedScroll) {
+      const scrollY = parseInt(savedScroll, 10);
+      if (!isNaN(scrollY) && scrollY > 0) {
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: scrollY, behavior: 'instant' });
+        });
+      }
+    }
+
+    const handleScroll = () => {
+      sessionStorage.setItem('nexus_catalog_scroll', window.scrollY.toString());
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      sessionStorage.setItem('nexus_catalog_scroll', window.scrollY.toString());
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const filteredVehicles = useMemo(() => {
     let result = [...vehicles];
@@ -83,6 +140,9 @@ const VehiclesPage = () => {
   const handleClearFilters = () => {
     setFilters({ vehicleType: 'all', state: 'all', city: 'all' });
     setSearchTerm('');
+    sessionStorage.removeItem('nexus_catalog_filters');
+    sessionStorage.removeItem('nexus_catalog_search');
+    sessionStorage.removeItem('nexus_catalog_scroll');
   };
 
   const activeFiltersCount = 
@@ -103,6 +163,7 @@ const VehiclesPage = () => {
         </div>
 
         <SearchBar 
+          key={`search-${searchTerm}`}
           onSearch={handleSearch} 
           onFilterToggle={() => setIsFilterOpen(true)}
           defaultValue={searchTerm}
