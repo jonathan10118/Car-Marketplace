@@ -7,6 +7,7 @@ const Input = ({
   placeholder,
   value,
   onChange,
+  onPaste,
   error,
   disabled = false,
   fullWidth = false,
@@ -41,6 +42,7 @@ const Input = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        onPaste={onPaste}
         disabled={disabled}
         {...props}
       />

@@ -4,8 +4,14 @@
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
+.profile-content-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .profile-header {
   margin-bottom: var(--spacing-2xl);
+  text-align: center;
 }
 
 .profile-header h1 {
